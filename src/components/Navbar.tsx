@@ -2,8 +2,16 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [openSubmenu, setOpenSubmenu] = useState<string | null>(null);
+
+  const toggleSubmenu = (name: string) => {
+    setOpenSubmenu(openSubmenu === name ? null : name);
+  };
+
   return (
     <header className="fixed top-0 z-50 w-full bg-white border-b border-border">
       <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
@@ -18,8 +26,8 @@ export default function Navbar() {
           />
         </Link>
 
-        {/* MENU */}
-        <ul className="flex items-center gap-8 text-secondary font-medium">
+        {/* Desktop MENU */}
+        <ul className="hidden md:flex items-center gap-8 text-secondary font-medium">
           <li>
             <Link href="/">Home</Link>
           </li>
@@ -115,7 +123,154 @@ export default function Navbar() {
             </div>
           </li>
         </ul>
+
+        {/* HAMBURGER */}
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="md:hidden text-secondary heading-3"
+          aria-label="Toggle menu"
+        >
+          ☰
+        </button>
       </nav>
+      {/* MOBILE MENU */}
+      {menuOpen && (
+        <div
+          className={`md:hidden overflow-hidden bg-background border-t border-border transition-all duration-300 ease-out ${
+            menuOpen
+              ? "max-h-screen opacity-100 translate-y-0"
+              : "max-h-0 opacity-0 -translate-y-2"
+          }`}
+        >
+          <ul className="flex flex-col px-6 py-4 space-y-4 text-secondary font-medium">
+            <li>
+              <Link href="/" onClick={() => setMenuOpen(false)}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link href="/about" onClick={() => setMenuOpen(false)}>
+                About
+              </Link>
+            </li>
+
+            <li>
+              <button
+                onClick={() => toggleSubmenu("programme")}
+                className="flex w-full items-center justify-between font-semibold"
+              >
+                Programme
+                <span className="text-small">
+                  {openSubmenu === "programme" ? "−" : "+"}
+                </span>
+              </button>
+
+              <div
+                className={`overflow-hidden transition-all duration-300 ease-out ${
+                  openSubmenu === "programme"
+                    ? "max-h-40 opacity-100"
+                    : "max-h-0 opacity-0"
+                }`}
+              >
+                <ul className="ml-4 mt-2 space-y-2 text-small text-text-muted">
+                  <li>
+                    <Link href="/venue/programme_overview">
+                      Brief Programme
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/venue/event_programmes">Event Programmes</Link>
+                  </li>
+                  <li>
+                    <Link href="/venue/important_dates">Important Dates</Link>
+                  </li>
+                  <li>
+                    <Link href="/venue/summit_fees">Summit Fees</Link>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <Link href="/themes" onClick={() => setMenuOpen(false)}>
+                Themes
+              </Link>
+            </li>
+
+            <li>
+              <button
+                onClick={() => toggleSubmenu("venue")}
+                className="flex w-full items-center justify-between font-semibold"
+              >
+                Venue
+                <span className="text-small">
+                  {openSubmenu === "venue" ? "−" : "+"}
+                </span>
+              </button>
+              <div
+                className={`overflow-hidden transition-all duration-300 ease-out ${
+                  openSubmenu === "venue"
+                    ? "max-h-32 opacity-100"
+                    : "max-h-0 opacity-0"
+                }`}
+              >
+                <ul className="ml-4 mt-2 space-y-2 text-small text-text-muted">
+                  <li>
+                    <Link href="/venue/venue_information">
+                      Venue Information
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/venue/accommodation">Accommodation</Link>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <Link href="/testimonials" onClick={() => setMenuOpen(false)}>
+                Testimonials
+              </Link>
+            </li>
+
+            <li>
+              <button
+                onClick={() => toggleSubmenu("download")}
+                className="flex w-full items-center justify-between font-semibold"
+              >
+                Download
+                <span>{openSubmenu === "download" ? "-" : "+"}</span>
+              </button>
+              <div
+                className={`overflow-hidden transition-all duration-300 ease-out ${
+                  openSubmenu === "download"
+                    ? "max-h-40 opacity-100"
+                    : "max-h-0 opacity-0"
+                }`}
+              >
+                <ul className="ml-4 mt-2 space-y-2 text-small text-text-muted">
+                  <li>
+                    <Link href="/download/Presentation_Slides">
+                      Presentation Slides
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/download/Abstract_Guideline_Template">
+                      Abstract Guideline & Template
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/download/Concept_Notes">Concept Notes</Link>
+                  </li>
+                  <li>
+                    <Link href="/download/CPRN_Poster">CPRN Poster</Link>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      )}
     </header>
   );
 }
