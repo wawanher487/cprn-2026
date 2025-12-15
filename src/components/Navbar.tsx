@@ -2,19 +2,43 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openSubmenu, setOpenSubmenu] = useState<string | null>(null);
+  const [hideNavbar, setHideNavbar] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (menuOpen) return;
+
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 90) {
+        setHideNavbar(true);
+      } else {
+        setHideNavbar(false);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY, menuOpen]);
 
   const toggleSubmenu = (name: string) => {
     setOpenSubmenu(openSubmenu === name ? null : name);
   };
 
   return (
-    <header className="fixed top-0 z-50 w-full bg-white border-b border-border">
-      <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
+    <header className={` fixed top-0 z-50 w-full bg-background border-b border-border transition-transform duration-300 ease-in-out ${hideNavbar ? "-translate-y-full" : "translate-y-0"}`}>
+      <nav className="mx-auto flex h-20 max-w-5xl items-center justify-between px-6">
         {/* LOGO */}
         <Link href="/" className="flex items-center gap-2">
           <Image
@@ -32,7 +56,7 @@ export default function Navbar() {
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/about">About</Link>
+            <Link href="#about">About</Link>
           </li>
           {/* Programme group*/}
           <li className="relative group">
@@ -149,7 +173,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link href="/about" onClick={() => setMenuOpen(false)}>
+              <Link href="#about" onClick={() => setMenuOpen(false)}>
                 About
               </Link>
             </li>
@@ -172,7 +196,7 @@ export default function Navbar() {
                     : "max-h-0 opacity-0"
                 }`}
               >
-                <ul className="ml-4 mt-2 space-y-2 text-small text-text-muted">
+                <ul className="ml-4 mt-2 space-y-2 text-small text-secondary">
                   <li>
                     <Link href="/venue/programme_overview">
                       Brief Programme
@@ -214,7 +238,7 @@ export default function Navbar() {
                     : "max-h-0 opacity-0"
                 }`}
               >
-                <ul className="ml-4 mt-2 space-y-2 text-small text-text-muted">
+                <ul className="ml-4 mt-2 space-y-2 text-small text-secondary">
                   <li>
                     <Link href="/venue/venue_information">
                       Venue Information
@@ -248,7 +272,7 @@ export default function Navbar() {
                     : "max-h-0 opacity-0"
                 }`}
               >
-                <ul className="ml-4 mt-2 space-y-2 text-small text-text-muted">
+                <ul className="ml-4 mt-2 space-y-2 text-small text-secondary">
                   <li>
                     <Link href="/download/Presentation_Slides">
                       Presentation Slides
