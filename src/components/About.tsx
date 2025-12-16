@@ -76,12 +76,12 @@ export default function About() {
                 {/* Card 1 */}
                 <motion.div
                     variants={itemVariants}
-                    className="rounded-2xl border border-border bg-background p-8 text-center"
+                    className="group rounded-2xl border border-border bg-background p-8 text-center transition-all duration-300 ease-out hover:-translate-y-2 hover:border-primary hover:bg-primary"
                 >
-                    <h3 className="heading-3 text-text-primary">
+                    <h3 className="heading-3 text-text-primary transition-colors duration-300 group-hover:text-white">
                     Knowledge Exchange
                     </h3>
-                    <p className="body-text mt-4 text-text-muted">
+                    <p className="body-text mt-4  text-text-muted transition-colors duration-300 group-hover:text-white/90">
                     A platform for sharing research findings, best practices, and
                     innovative ideas among academic and professional communities.
                     </p>
@@ -90,12 +90,12 @@ export default function About() {
                 {/* Card 2 */}
                 <motion.div
                     variants={itemVariants}
-                    className="rounded-2xl border border-border bg-background p-8 text-center"
+                    className="group rounded-2xl border border-border bg-background p-8 text-center transition-all duration-300 ease-out hover:-translate-y-2 hover:border-primary hover:bg-primary"
                 >
-                    <h3 className="heading-3 text-text-primary">
+                    <h3 className="heading-3 text-text-primary transition-colors duration-300 group-hover:text-white">
                     Regional Collaboration
                     </h3>
-                    <p className="body-text mt-4 text-text-muted">
+                    <p className="body-text mt-4  text-text-muted transition-colors duration-300 group-hover:text-white/90">
                     Encouraging cross-country partnerships to address shared
                     challenges in education, research, and development.
                     </p>
@@ -104,12 +104,12 @@ export default function About() {
                 {/* Card 3 */}
                 <motion.div
                     variants={itemVariants}
-                    className="rounded-2xl border border-border bg-background p-8 text-center"
+                    className="group rounded-2xl border border-border bg-background p-8 text-center transition-all duration-300 ease-out hover:-translate-y-2 hover:border-primary hover:bg-primary"
                 >
-                    <h3 className="heading-3 text-text-primary">
+                    <h3 className="heading-3 text-text-primary transition-colors duration-300 group-hover:text-white">
                     Sustainable Impact
                     </h3>
-                    <p className="body-text mt-4 text-text-muted">
+                    <p className="body-text mt-4  text-text-muted transition-colors duration-300 group-hover:text-white/90">
                     Supporting long-term research networks and collaborative practices
                     that contribute to sustainable regional growth.
                     </p>

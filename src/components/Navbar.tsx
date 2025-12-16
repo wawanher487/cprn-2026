@@ -89,7 +89,7 @@ export default function Navbar() {
             </div>
           </li>
           <li>
-            <Link href="/themes">Themes</Link>
+            <Link href="#themes">Themes</Link>
           </li>
 
           {/* Venue group*/}
