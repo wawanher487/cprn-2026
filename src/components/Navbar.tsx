@@ -216,7 +216,7 @@ export default function Navbar() {
             </li>
 
             <li>
-              <Link href="/themes" onClick={() => setMenuOpen(false)}>
+              <Link href="#themes" onClick={() => setMenuOpen(false)}>
                 Themes
               </Link>
             </li>
