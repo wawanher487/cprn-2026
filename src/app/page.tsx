@@ -3,7 +3,8 @@ import Navbar from "@/components/Navbar";
 import About from "@/components/About";
 import Themes from "@/components/Themes";
 import WhyJoin from "@/components/WhyJoin";
-import SponsorBy from "@/components/logo/SponsorBy";
+import SponsorBy from "@/components/Sponsor/SponsorBy";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Themes/>
         <WhyJoin/>
         <SponsorBy/>
+        <Footer/>
       </main>
     </>
   );
