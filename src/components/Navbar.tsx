@@ -56,7 +56,7 @@ export default function Navbar() {
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="#about">About</Link>
+            <Link href="/#about">About</Link>
           </li>
           {/* Programme group*/}
           <li className="relative group">
@@ -173,7 +173,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link href="#about" onClick={() => setMenuOpen(false)}>
+              <Link href="/#about" onClick={() => setMenuOpen(false)}>
                 About
               </Link>
             </li>

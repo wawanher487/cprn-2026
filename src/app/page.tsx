@@ -17,8 +17,8 @@ export default function Home() {
         <Themes/>
         <WhyJoin/>
         <SponsorBy/>
-        <Footer/>
       </main>
+      <Footer/>
     </>
   );
 }

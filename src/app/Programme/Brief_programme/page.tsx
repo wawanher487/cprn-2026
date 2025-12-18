@@ -9,8 +9,8 @@ export default function Home() {
       <main>
         {/* content */}
         <Content />
-        <Footer/>
       </main>
+      <Footer/>
     </>
   );
 }
