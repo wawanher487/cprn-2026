@@ -20,7 +20,7 @@ return (
                         height={48}
                     />
                     <Image
-                        src="/logos/ceccep.png"
+                        src="/logos/logo_ceccep.png"
                         alt="CECCEP Logo"
                         width={48}
                         height={48}

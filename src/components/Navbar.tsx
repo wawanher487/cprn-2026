@@ -38,13 +38,13 @@ export default function Navbar() {
 
   return (
     <header className={` fixed top-0 z-50 w-full bg-background border-b border-border transition-transform duration-300 ease-in-out ${hideNavbar ? "-translate-y-full" : "translate-y-0"}`}>
-      <nav className="mx-auto flex h-20 max-w-5xl items-center justify-between px-6">
+      <nav className="mx-auto flex h-20 max-w-6xl items-center justify-between px-6">
         {/* LOGO */}
-        <Link href="/" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-1">
           <Image
             src="/logo_cprn.png"
             alt="CPRN 2026 Logo"
-            width={120}
+            width={175}
             height={40}
             priority
           />
@@ -63,25 +63,25 @@ export default function Navbar() {
             <span className="cursor-pointer">Programme ▾</span>
             <div className="absolute left-0 top-full mt-3 w-44 rounded-xl border border-border bg-white shadow-lg opacity-0 invisible transition-all group-hover:opacity-100 group-hover:visible">
               <Link
-                href="/venue/programme_overview"
+                href="/Programme/Brief_programme"
                 className="block px-4 py-2 hover:bg-surface"
               >
                 Brief Programme
               </Link>
               <Link
-                href="/venue/event_programmes"
+                href="/programme/event_programmes"
                 className="block px-4 py-2 hover:bg-surface"
               >
                 Event Programmes
               </Link>
               <Link
-                href="/venue/important_dates"
+                href="/programme/important_dates"
                 className="block px-4 py-2 hover:bg-surface"
               >
                 Important Dates
               </Link>
               <Link
-                href="/venue/summit_fees"
+                href="/programme/summit_fees"
                 className="block px-4 py-2 hover:bg-surface"
               >
                 Summit Fees

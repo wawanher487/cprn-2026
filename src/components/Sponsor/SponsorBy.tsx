@@ -5,7 +5,7 @@ import { LogoMarquee } from "./LogoMarquee";
 
 export default function SponsorBy() {
   const organizers = [
-    { name: "SEAMEO CECCEP", logo: "/logos/ceccep.png" },
+    { name: "SEAMEO CECCEP", logo: "/logos/logo_ceccep.png" },
     { name: "SEAMEO Secretariat", logo: "/logos/seameo-secretariat.png" },
     { name: "MoPSE Indonesia", logo: "/logos/mopse.png" }
   ];
