@@ -8,62 +8,95 @@ export default function BriefProgramme() {
 
   const programmes = [
     {
-      label: "DAY 1 THURSDAY (AM), 03 JULY 2025",
+      label: "DAY 1 TUESDAY (AM), 16 JUNE 2026",
       sessions: [
         {
-          time: "08:00 – 08:30",
-          title: "Arrival of delegates & registration",
-        },
-        {
-          time: "08:30 – 09:30",
-          title: "Group Photo",
+          time: "08:30 – 10:00",
+          title: "Opening Ceremony",
           details: [
-            "Brunei Darussalam National Anthem",
-            "SEAMEO Colours",
-            "Recital of Doa",
-            "Welcoming Remarks by SEAMEO VOCTECH Centre Director",
-            "Speech by SEAMEO Secretariat Director",
-            "Speech by the Guest of Honour",
-            "Launching of the SEAMEO CPRN Summit 2025 Video",
-          ],
+            "Indonesia Raya and SEAMEO Colors",
+            "Committee Report by the Director of SEAMEO CECCEP",
+            "Welcoming Remarks from the Director of the SEAMEO Secretariat",
+            "Welcoming and Opening Remarks from Indonesia Ministry of Primary and Secondary Education"
+          ]
         },
         {
-          time: "09:30 – 09:50",
-          title: "Keynote Speech 1 (Education sub-theme)",
+          time: "10:00 – 10:30",
+          title: "Keynote Speech 1: Connecting Research, Policy, and Practice toward an Inclusive, Equitable, and Sustainable Future",
         },
         {
-          time: "09:50 – 10:30",
-          title: "Morning Break",
+          time: "10:30 – 12:00",
+          title: " Plenary Session 1: Transforming Education Systems for Equity: Tackling Structural Barriers to Access, Participation, and Learning",
+        },
+        {
+          time: "12:00 – 13:00",
+          title: "Lunch Break",
+        },
+        {
+          time: "13:00 – 14:30",
+          title: " Plenary Session 2: Science, Innovation, and Public Policy",
+        },
+        {
+          time: "14:30 – 15:00",
+          title: "Break",
+        },
+        {
+          time: "15:00 – 16:30",
+          title: " Parallel Sessions and Workshop",
+        },
+        {
+          time: "19:00 – 21:00",
+          title: "Gala Dinner and networking session",
         },
       ],
     },
     {
-      label: "DAY 2 THURSDAY (AM), 04 JULY 2025",
+      label: "DAY 2 WEDNESDAY (AM), 17 JUNE 2026",
       sessions: [
         {
-          time: "08:00 – 08:30",
+          time: "08:30 – 09:00",
           title: "Arrival of delegates & registration",
         },
         {
-          time: "08:30 – 09:30",
-          title: "Group Photo",
-          details: [
-            "Brunei Darussalam National Anthem",
-            "SEAMEO Colours",
-            "Recital of Doa",
-            "Welcoming Remarks by SEAMEO VOCTECH Centre Director",
-            "Speech by SEAMEO Secretariat Director",
-            "Speech by the Guest of Honour",
-            "Launching of the SEAMEO CPRN Summit 2025 Video",
-          ],
+          time: "09:00 – 10:30",
+          title: " Plenary Session 3: Cultural Policies for Identity, Inclusion, and Peacebuilding ",
         },
         {
-          time: "09:30 – 09:50",
-          title: "Keynote Speech 1 (Education sub-theme)",
+          time: "10:30 – 12:00",
+          title: "Plenary Session 4: Education, Culture, and Science for sustainable economy and development",
         },
         {
-          time: "09:50 – 10:30",
-          title: "Morning Break",
+          time: "12:00 – 13:00",
+          title: "lunch break",
+        },
+        {
+          time: "13:00 – 15:00",
+          title: "Parallel Sessions and Workshop",
+        },
+      ],
+    },
+    {
+      label: "DAY 3 THURSDAY (AM), 18 JUNE 2026",
+      sessions: [
+        {
+          time: "08:30 – 10:00",
+          title: "Keynote speech 3",
+        },
+        {
+          time: "09:00 – 10:30",
+          title: "Presentation of wrap up results from parallel session",
+        },
+        {
+          time: "10:30 – 11:00",
+          title: "Closing Remarks",
+        },
+        {
+          time: "11:00 – 13:00",
+          title: "lunch break",
+        },
+        {
+          time: "13:00 – 15:00",
+          title: "Cultural visit",
         },
       ],
     },
