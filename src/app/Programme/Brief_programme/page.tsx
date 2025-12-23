@@ -1,6 +1,6 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import Content from "./content";
+import Content from "./BriefProgramme";
 
 export default function Home() {
   return (
