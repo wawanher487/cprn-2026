@@ -83,19 +83,19 @@ export default function BriefProgramme() {
           title: "Keynote speech 3",
         },
         {
-          time: "09:00 – 10:30",
+          time: "10:00 – 11:30",
           title: "Presentation of wrap up results from parallel session",
         },
         {
-          time: "10:30 – 11:00",
+          time: "11:30 – 12:00",
           title: "Closing Remarks",
         },
         {
-          time: "11:00 – 13:00",
+          time: "12:00 – 14:00",
           title: "lunch break",
         },
         {
-          time: "13:00 – 15:00",
+          time: "14:00 – 15:00",
           title: "Cultural visit",
         },
       ],

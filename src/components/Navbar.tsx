@@ -69,7 +69,7 @@ export default function Navbar() {
                 Brief Programme
               </Link>
               <Link
-                href="/programme/event_programmes"
+                href="/Programme/Event_programmes"
                 className="block px-4 py-2 hover:bg-surface"
               >
                 Event Programmes
