@@ -103,14 +103,13 @@ export default function BriefProgramme() {
   ];
 
   return (
-    <section className="bg-background mt-15">
+    <section className="bg-background mt-24 mb-12">
       {/* HERO */}
-      <div className="bg-secondary border border-border py-24 text-center">
+      <div className="bg-secondary mx-3 mt-22 rounded-2xl border border-border py-24 text-center">
         <h1 className="heading-1 text-white">Brief Programme</h1>
       </div>
-
       {/* CONTENT */}
-      <div className="mx-auto max-w-4xl px-5 py-16">
+      <div className="mx-auto max-w-4xl pt-7 px-4 md:px-6">
         <div className="space-y-4">
           {programmes.map((day, index) => (
             <div
@@ -127,7 +126,7 @@ export default function BriefProgramme() {
                 <h3 className="font-semibold text-secondary">
                   {day.label}
                 </h3>
-                <span className="text-xl">
+                <span className="text-xl text-secondary">
                   {activeIndex === index ? "−" : "+"}
                 </span>
               </button>

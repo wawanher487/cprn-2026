@@ -198,18 +198,18 @@ export default function Navbar() {
               >
                 <ul className="ml-4 mt-2 space-y-2 text-small text-secondary">
                   <li>
-                    <Link href="/venue/programme_overview">
+                    <Link href="/Programme/Brief_programme">
                       Brief Programme
                     </Link>
                   </li>
                   <li>
-                    <Link href="/venue/event_programmes">Event Programmes</Link>
+                    <Link href="/Programme/Event_programmes">Event Programmes</Link>
                   </li>
                   <li>
-                    <Link href="/venue/important_dates">Important Dates</Link>
+                    <Link href="/Programme/important_dates">Important Dates</Link>
                   </li>
                   <li>
-                    <Link href="/venue/summit_fees">Summit Fees</Link>
+                    <Link href="/Programme/summit_fees">Summit Fees</Link>
                   </li>
                 </ul>
               </div>

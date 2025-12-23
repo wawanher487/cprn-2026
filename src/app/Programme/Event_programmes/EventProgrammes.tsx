@@ -22,15 +22,15 @@ const programmes = [
 
 export default function EventProgrammes() {
 return (
-        <section className="bg-background py-16">
+        <section className="bg-background mt-24 mb-12">
             {/* HERO */}
-            <div className="bg-secondary border border-border py-24 text-center">
-                <h1 className="heading-1 text-white">Event Details</h1>
+            <div className="bg-secondary mx-3 mt-22 rounded-2xl border border-border py-15 text-center">
+                <h1 className="heading-1 text-white">Event  Details</h1>
                 <p className="body-text mt-4 text-white">All you need to know about two-days programmes (Downloadable)</p>
             </div>
-            <div className="mx-auto max-w-3xl mt-16 px-4 md:px-6">
+            <div className="mx-auto max-w-3xl mt-7 px-4 md:px-6">
                 {/* TITLE */}
-                <h2 className="heading-2 text-text-muted">
+                <h2 className="heading-2 text-secondary">
                 Event Programmes
                 </h2>
                 {/* LIST */}
