@@ -105,7 +105,7 @@ export default function BriefProgramme() {
   return (
     <section className="bg-background mt-24 mb-12">
       {/* HERO */}
-      <div className="bg-secondary mx-3 mt-22 rounded-2xl border border-border py-24 text-center">
+      <div className="bg-secondary mx-3 mt-22 rounded-2xl border border-border py-20 text-center">
         <h1 className="heading-1 text-white">Brief Programme</h1>
       </div>
       {/* CONTENT */}

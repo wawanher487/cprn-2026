@@ -75,13 +75,13 @@ export default function Navbar() {
                 Event Programmes
               </Link>
               <Link
-                href="/programme/important_dates"
+                href="/Programme/Important_dates"
                 className="block px-4 py-2 hover:bg-surface"
               >
                 Important Dates
               </Link>
               <Link
-                href="/programme/summit_fees"
+                href="/Programme/summit_fees"
                 className="block px-4 py-2 hover:bg-surface"
               >
                 Summit Fees
@@ -97,13 +97,13 @@ export default function Navbar() {
             <span className="cursor-pointer">Venue ▾</span>
             <div className="absolute left-0 top-full mt-3 w-44 rounded-xl border border-border bg-white shadow-lg opacity-0 invisible transition-all group-hover:opacity-100 group-hover:visible">
               <Link
-                href="/venue/venue_information"
+                href="/Venue/Venue_information"
                 className="block px-4 py-2 hover:bg-surface"
               >
                 Venue Information
               </Link>
               <Link
-                href="/venue/accommodation"
+                href="/Venue/Accommodation"
                 className="block px-4 py-2 hover:bg-surface"
               >
                 Accommodation
@@ -112,7 +112,7 @@ export default function Navbar() {
           </li>
 
           <li>
-            <Link href="/testimonials">Testimonials</Link>
+            <Link href="/Testimonials">Testimonials</Link>
           </li>
 
           {/* DOWNLOAD  group*/}
@@ -206,10 +206,10 @@ export default function Navbar() {
                     <Link href="/Programme/Event_programmes">Event Programmes</Link>
                   </li>
                   <li>
-                    <Link href="/Programme/important_dates">Important Dates</Link>
+                    <Link href="/Programme/Important_dates">Important Dates</Link>
                   </li>
                   <li>
-                    <Link href="/Programme/summit_fees">Summit Fees</Link>
+                    <Link href="/Programme/Summit_fees">Summit Fees</Link>
                   </li>
                 </ul>
               </div>
