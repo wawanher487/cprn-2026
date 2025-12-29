@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { SidebarFilters } from "@/components/SidebarFilters";
 import Deadlines from "./sections/Deadlines";
-// import SummitFee from "./sections/SummitFee";
+import SummitFee from "./sections/SummitFee";
 // import Accommodation from "./sections/Accommodation";
 // import SummitVenue from "./sections/SummitVenue";
 
@@ -23,13 +23,13 @@ export default function ImportantDatesPage() {
       </div>
 
       {/* Layout */}
-      <main className="max-w-7xl mx-auto flex gap-10 px-6 py-16">
+      <main className="max-w-7xl mx-auto flex gap-25 px-6 py-16">
         <SidebarFilters />
 
-        <div className="flex-1 space-y-40">
+        <div className="flex-1 space-y-15">
           <Deadlines />
-
-          {/* <SummitFee />
+          <SummitFee />
+          {/* 
           <Accommodation />
           <SummitVenue /> */}
         </div>

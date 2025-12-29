@@ -3,22 +3,22 @@
 export const deadlines = [
   {
     title: "Abstract Submission",
-    date: "Normal Fee: 26 May 2025",
+    date: "Normal Fee: 22 May 2026",
   },
   {
     title: "Abstract Feedback",
-    date: "Normal Fee: 2 June 2025",
+    date: "Normal Fee: 2 June 2026",
   },
   {
     title: "Registration",
-    date: "International participants: 2 June 2025 | Local participants: 22 June 2025",
+    date: "International participants: 2 June 2026 | Local participants: 10 June 2026",
   },
   {
     title: "Full paper/ presentation/ poster submission",
-    date: "19 June 2025",
+    date: "10 June 2026",
   },
   {
     title: "CPRN Summit",
-    date: "3 – 4 July 2025",
+    date: "16 – 18 June 2026",
   },
 ];

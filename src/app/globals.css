@@ -15,10 +15,10 @@
   --color-accent: #ff9900;
 
   /* NEUTRALS */
-  --color-background: #ffffff;
+  --color-background: #ffffff;  /* putih */
   --color-surface: #f8fafc;
-  --color-text-primary: #0f172a;
-  --color-text-muted: #475569;
+  --color-text-primary: #0f172a; /* hijau */
+  --color-text-muted: #475569;  /* hijau */
   --color-border: #cbd5e1;
 
   /* FONT FAMILY */
