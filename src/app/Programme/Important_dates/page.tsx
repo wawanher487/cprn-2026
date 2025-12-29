@@ -3,8 +3,8 @@ import Footer from "@/components/Footer";
 import { SidebarFilters } from "@/components/SidebarFilters";
 import Deadlines from "./sections/Deadlines";
 import SummitFee from "./sections/SummitFee";
-// import Accommodation from "./sections/Accommodation";
-// import SummitVenue from "./sections/SummitVenue";
+import Accommodation from "./sections/Accommodation";
+import SummitVenue from "./sections/SummitVenue";
 
 export default function ImportantDatesPage() {
   return (
@@ -29,9 +29,8 @@ export default function ImportantDatesPage() {
         <div className="flex-1 space-y-15">
           <Deadlines />
           <SummitFee />
-          {/* 
           <Accommodation />
-          <SummitVenue /> */}
+          <SummitVenue />
         </div>
       </main>
 

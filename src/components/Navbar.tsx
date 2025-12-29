@@ -101,13 +101,13 @@ export default function Navbar() {
             <span className="cursor-pointer">Venue ▾</span>
             <div className="absolute left-0 top-full mt-3 w-44 rounded-xl border border-border bg-white shadow-lg opacity-0 invisible transition-all group-hover:opacity-100 group-hover:visible">
               <Link
-                href="/Venue/Venue_information"
+                href="/Programme/Important_dates#summit-venue"
                 className="block px-4 py-2 hover:bg-surface"
               >
                 Venue Information
               </Link>
               <Link
-                href="/Venue/Accommodation"
+                href="/Programme/Important_dates#accommodation"
                 className="block px-4 py-2 hover:bg-surface"
               >
                 Accommodation
@@ -250,12 +250,14 @@ export default function Navbar() {
               >
                 <ul className="ml-4 mt-2 space-y-2 text-small text-secondary">
                   <li>
-                    <Link href="/venue/venue_information">
+                    <Link href="/Programme/Important_dates#summit-venue">
                       Venue Information
                     </Link>
                   </li>
                   <li>
-                    <Link href="/venue/accommodation">Accommodation</Link>
+                    <Link href="/Programme/Important_dates#accommodation">
+                      Accommodation
+                    </Link>
                   </li>
                 </ul>
               </div>
