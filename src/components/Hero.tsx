@@ -43,7 +43,7 @@ const imageVariants : Variants = {
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-background">
+    <section className="relative overflow-hidden bg-background md:my-15">
     <div className="mx-auto max-w-7xl px-6 pt-32 pb-20">
         <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
 
