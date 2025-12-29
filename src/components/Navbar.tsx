@@ -37,7 +37,11 @@ export default function Navbar() {
   };
 
   return (
-    <header className={` fixed top-0 z-50 w-full bg-background border-b border-border transition-transform duration-300 ease-in-out ${hideNavbar ? "-translate-y-full" : "translate-y-0"}`}>
+    <header
+      className={` fixed top-0 z-50 w-full bg-background border-b border-border transition-transform duration-300 ease-in-out ${
+        hideNavbar ? "-translate-y-full" : "translate-y-0"
+      }`}
+    >
       <nav className="mx-auto flex h-20 max-w-6xl items-center justify-between px-6">
         {/* LOGO */}
         <Link href="/" className="flex items-center gap-1">
@@ -81,7 +85,7 @@ export default function Navbar() {
                 Important Dates
               </Link>
               <Link
-                href="/Programme/summit_fees"
+                href="/Programme/Important_dates#summit-fee"
                 className="block px-4 py-2 hover:bg-surface"
               >
                 Summit Fees
@@ -203,13 +207,19 @@ export default function Navbar() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/Programme/Event_programmes">Event Programmes</Link>
+                    <Link href="/Programme/Event_programmes">
+                      Event Programmes
+                    </Link>
                   </li>
                   <li>
-                    <Link href="/Programme/Important_dates">Important Dates</Link>
+                    <Link href="/Programme/Important_dates">
+                      Important Dates
+                    </Link>
                   </li>
                   <li>
-                    <Link href="/Programme/Summit_fees">Summit Fees</Link>
+                    <Link href="/Programme/Important_dates#summit-fee">
+                      Summit Fees
+                    </Link>
                   </li>
                 </ul>
               </div>
