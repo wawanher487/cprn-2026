@@ -1,10 +1,11 @@
-import Hero from "@/components/Hero";
+import Hero from "@/components/Home/Hero";
 import Navbar from "@/components/Navbar";
-import About from "@/components/About";
-import Themes from "@/components/Themes";
-import WhyJoin from "@/components/WhyJoin";
+import About from "@/components/Home/About";
+import Themes from "@/components/Home/Themes";
+import WhyJoin from "@/components/Home/WhyJoin";
 import SponsorBy from "@/components/Sponsor/SponsorBy";
 import Footer from "@/components/Footer";
+import Testimonials from "@/components/Home/Testimonials";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <About />
         <Themes/>
         <WhyJoin/>
+        <Testimonials/>
         <SponsorBy/>
       </main>
       <Footer/>

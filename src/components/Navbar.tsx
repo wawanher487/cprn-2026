@@ -93,7 +93,7 @@ export default function Navbar() {
             </div>
           </li>
           <li>
-            <Link href="#themes">Themes</Link>
+            <Link href="/#themes">Themes</Link>
           </li>
 
           {/* Venue group*/}
@@ -116,7 +116,7 @@ export default function Navbar() {
           </li>
 
           <li>
-            <Link href="/Testimonials">Testimonials</Link>
+            <Link href="/#testimonials">Testimonials</Link>
           </li>
 
           {/* DOWNLOAD  group*/}
@@ -264,7 +264,7 @@ export default function Navbar() {
             </li>
 
             <li>
-              <Link href="/testimonials" onClick={() => setMenuOpen(false)}>
+              <Link href="/#testimonials" onClick={() => setMenuOpen(false)}>
                 Testimonials
               </Link>
             </li>
