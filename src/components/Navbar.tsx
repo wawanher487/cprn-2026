@@ -125,7 +125,7 @@ export default function Navbar() {
 
             <div className="absolute left-0 top-full mt-3 w-44 rounded-xl border border-border bg-white shadow-lg opacity-0 invisible transition-all group-hover:opacity-100 group-hover:visible">
               <Link
-                href="/download/Presentation_Slides"
+                href="/presentations"
                 className="block px-4 py-2 hover:bg-surface"
               >
                 Presentasion Slides
@@ -286,9 +286,7 @@ export default function Navbar() {
               >
                 <ul className="ml-4 mt-2 space-y-2 text-small text-secondary">
                   <li>
-                    <Link href="/download/Presentation_Slides">
-                      Presentation Slides
-                    </Link>
+                    <Link href="/presentations">Presentation Slides</Link>
                   </li>
                   <li>
                     <Link href="/Download/Call-For-Papers-New-Extension-Submission-Dates-10May2025.pdf">
