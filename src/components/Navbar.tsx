@@ -131,19 +131,19 @@ export default function Navbar() {
                 Presentasion Slides
               </Link>
               <Link
-                href="/download/Abstract_Guideline_Template"
+                href="/Download/Call-For-Papers-New-Extension-Submission-Dates-10May2025.pdf"
                 className="block px-4 py-2 hover:bg-surface"
               >
                 Abstract Guideline & Template
               </Link>
               <Link
-                href="/download/Concept_Notes"
+                href="/Download/CPRN-2025-Concept-Note.pdf"
                 className="block px-4 py-2 hover:bg-surface"
               >
                 Concept Notes
               </Link>
               <Link
-                href="/download/CPRN_Poster"
+                href="/Download/Call-For-Papers-New-Extension-Submission-Dates-10May2025.pdf"
                 className="block px-4 py-2 hover:bg-surface"
               >
                 CPRN Poster
@@ -291,15 +291,19 @@ export default function Navbar() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/download/Abstract_Guideline_Template">
+                    <Link href="/Download/Call-For-Papers-New-Extension-Submission-Dates-10May2025.pdf">
                       Abstract Guideline & Template
                     </Link>
                   </li>
                   <li>
-                    <Link href="/download/Concept_Notes">Concept Notes</Link>
+                    <Link href="/Download/CPRN-2025-Concept-Note.pdf">
+                      Concept Notes
+                    </Link>
                   </li>
                   <li>
-                    <Link href="/download/CPRN_Poster">CPRN Poster</Link>
+                    <Link href="/Download/Call-For-Papers-New-Extension-Submission-Dates-10May2025.pdf">
+                      CPRN Poster
+                    </Link>
                   </li>
                 </ul>
               </div>
