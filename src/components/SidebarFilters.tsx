@@ -7,7 +7,7 @@ const filters = [
 
 export function SidebarFilters() {
   return (
-    <aside className="bg-surface p-6 rounded-2xl shadow-lg w-72 sticky top-20 h-fit">
+    <aside className="hidden xl:block bg-surface p-6 rounded-2xl shadow-lg w-72 sticky top-20 h-fit">
       <p className="text-small mb-4 text-text-muted">Filter by topic</p>
       <ul className="space-y-3">
         {filters.map((item, i) => (
