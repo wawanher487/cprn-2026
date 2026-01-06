@@ -44,7 +44,7 @@ export default function Testimonials() {
         style={{ transform: `translateX(-${index * 100}%)` }}
       >
         {testimonialsData.map((testi, i) => (
-          <div key={i} className="min-w-full text-center flex flex-col gap-4">
+          <div key={i} className="min-w-full text-center flex flex-col gap-4 px-10">
             <span>
               <p className="heading-4 font-bold">{testi.name}</p>
               <p className="opacity-80">{testi.title}</p>

@@ -42,20 +42,21 @@ export default function Navbar() {
         hideNavbar ? "-translate-y-full" : "translate-y-0"
       }`}
     >
-      <nav className="mx-auto flex h-20 max-w-6xl items-center justify-between px-6">
+      <nav className="mx-auto flex h-20 max-w-6xl items-center justify-between px-6 ">
         {/* LOGO */}
         <Link href="/" className="flex items-center gap-1">
           <Image
             src="/logo_cprn.png"
             alt="CPRN 2026 Logo"
-            width={175}
+            width={150}
             height={40}
+            className="lg:w-[175px] w-[140px]"
             priority
           />
         </Link>
 
         {/* Desktop MENU */}
-        <ul className="hidden md:flex items-center gap-8 text-secondary font-medium">
+        <ul className="hidden lg:flex items-center gap-6 text-secondary font-medium">
           <li>
             <Link href="/">Home</Link>
           </li>
@@ -155,7 +156,7 @@ export default function Navbar() {
         {/* HAMBURGER */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden text-secondary heading-3"
+          className="lg:hidden text-secondary heading-3"
           aria-label="Toggle menu"
         >
           ☰
@@ -164,7 +165,7 @@ export default function Navbar() {
       {/* MOBILE MENU */}
       {menuOpen && (
         <div
-          className={`md:hidden overflow-hidden bg-background border-t border-border transition-all duration-300 ease-out ${
+          className={`lg:hidden overflow-hidden bg-background border-t border-border transition-all duration-300 ease-out ${
             menuOpen
               ? "max-h-screen opacity-100 translate-y-0"
               : "max-h-0 opacity-0 -translate-y-2"
