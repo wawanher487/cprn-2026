@@ -26,7 +26,7 @@ const itemVariants: Variants = {
 
 export default function Themes() {
 return (
-    <section className="bg-background">
+    <section className="bg-surface">
         <div id="themes" className="mx-auto max-w-7xl px-6 py-20">
 
             {/* ===================== */}
@@ -154,13 +154,10 @@ return (
                     </h3>
                     <div className="md:col-span-2">
                         <h4 className="heading-4 text-text-primary">
-                        Equity & Diversity in Learning
+                        Education Transformation for an Inclusive and Future-Ready Society
                         </h4>
-                        <p className="body-text mt-3 text-text-muted">
-                        Explore the transformative role of technology in education by
-                        highlighting how digital tools are revolutionising teaching
-                        and learning, while enhancing accessibility, inclusivity,
-                        and quality.
+                        <p className="body-text mt-3 text-text-muted text-justify">
+                        Explore how education systems can be transformed to promote equity, strengthen access and participation, and improve learning quality across all levels. This pillar highlights inclusive policies that address structural barriers, the integration of future-oriented skills and digital technologies, seamless transitions throughout the education lifecycle, strengthened teacher professionalism, and robust assessment and governance systems to ensure resilient, high-quality, and lifelong learning for all.
                         </p>
                     </div>
                 </motion.div>
@@ -177,13 +174,10 @@ return (
                     </h3>
                     <div className="md:col-span-2">
                         <h4 className="heading-4 text-text-primary">
-                        Inclusive STEM & Research
+                        Science, Innovation, and Inclusive Policy for Sustainable Development
                         </h4>
-                        <p className="body-text mt-3 text-text-muted">
-                        Highlight sustainable practices in science and innovation by
-                        adopting environmentally responsible approaches, leveraging
-                        artificial intelligence, and advancing research aimed at
-                        long-term environmental and social impact.
+                        <p className="body-text mt-3 text-text-muted text-justify">
+                        Explore the role of science and innovation in shaping evidence-based public policies that address societal challenges across health, education, environment, and technology. This pillar highlights STEAM education for sustainability, inclusive participation of youth, women, and marginalized groups in science, regional collaboration through science diplomacy, and responsible innovation that integrates ethical considerations and indigenous knowledge to support sustainable and equitable development.
                         </p>
                     </div>
                 </motion.div>
@@ -200,10 +194,10 @@ return (
                     </h3>
                     <div className="md:col-span-2">
                         <h4 className="heading-4 text-text-primary">
-                        Preserving Southeast Asian Heritage
+                        Culture, Creativity, and Inclusive Societies
                         </h4>
-                        <p className="body-text mt-3 text-text-muted">
-                        Discuss approaches to preserve and revitalise cultural traditions in diverse societies by embracing inclusive platforms that encourage cultural dialogue, mutual understanding, and innovation rooted in heritage.
+                        <p className="body-text mt-3 text-text-muted text-justify">
+                        Explore how cultural policies and creative practices strengthen identity, inclusion, and peacebuilding in diverse societies. This pillar highlights the safeguarding of intangible cultural heritage, the growth of creative and cultural industries for inclusive economic development, the integration of cultural rights into education, and the ethical use of digital technologies to ensure fair representation, community participation, and intergenerational justice.
                         </p>
                     </div>
                 </motion.div>

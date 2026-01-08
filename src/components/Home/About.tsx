@@ -39,7 +39,7 @@ export default function About() {
                 {/* Subtitle */}
                 <motion.h1
                     variants={itemVariants}
-                    className="heading-1 inline-block rounded-full bg-background px-4 py-1 text-secondary"
+                    className="heading-1 inline-block rounded-full px-4 py-1 text-secondary"
                 >
                     About the Summit
                 </motion.h1>

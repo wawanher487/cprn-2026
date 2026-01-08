@@ -20,7 +20,7 @@ export default function SponsorBy() {
   ];
 
   return (
-    <section className="bg-background py-10 md:py-20 space-y-14">
+    <section className="bg-surface py-10 md:py-20 space-y-14">
         {/* ORGANIZERS */}
         <div className="mx-auto max-w-5xl px-4">
             <p className="text-small text-center uppercase tracking-widest text-text-muted">

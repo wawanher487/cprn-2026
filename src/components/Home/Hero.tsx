@@ -43,7 +43,7 @@ const imageVariants : Variants = {
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-background md:my-5">
+    <section className="relative overflow-hidden bg-surface md:my-5">
     <div className="mx-auto max-w-7xl px-6 pt-32 pb-20">
         <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
 
@@ -61,9 +61,7 @@ export default function Hero() {
 
                 {/* Description */}
                 <motion.p variants={itemVariants} className="body-text mt-6 text-text-muted">
-                An international summit fostering collaboration, innovation,
-                and research networking among educators, researchers, and
-                practitioners across the region.
+                Bridging Research, Policy, and Practice: Pathways toward an Inclusive, Equitable, and Sustainable Futures
                 </motion.p>
 
                 {/* CTA */}
@@ -76,7 +74,7 @@ export default function Hero() {
                 </Link>
 
                 <Link
-                    href="/programme"
+                    href="/Programme/Important_dates"
                     className="rounded-xl border border-border px-6 py-3 text-secondary transition hover:bg-surface"
                 >
                     View Programme
