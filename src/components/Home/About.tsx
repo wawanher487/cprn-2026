@@ -27,95 +27,95 @@ const itemVariants: Variants = {
 
 export default function About() {
   return (
-    <section className="bg-surface md:py-12">
-        <div id="about"  className="mx-auto max-w-7xl px-6 py-10">
-                <motion.div
-                variants={containerVariants}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true }}
-                className="mx-auto max-w-3xl text-center"
-                >
-                {/* Subtitle */}
-                <motion.h1
-                    variants={itemVariants}
-                    className="heading-1 inline-block rounded-full px-4 py-1 text-secondary"
-                >
-                    About the Summit
-                </motion.h1>
+    <section className="relative overflow-hidden bg-linear-to-br from-blue-50 via-white to-orange-50 pb-22">
+      <div id="about" className="mx-auto max-w-7xl px-6 py-10">
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="mx-auto max-w-3xl text-center"
+        >
+          {/* Subtitle */}
+          <motion.h1
+            variants={itemVariants}
+            className="heading-1 inline-block rounded-full px-4 py-1 text-secondary"
+          >
+            About the Summit
+          </motion.h1>
 
-                {/* Title */}
-                <motion.h2
-                    variants={itemVariants}
-                    className="heading-2 mt-6 text-text-primary"
-                >
-                    What is CPRN Summit 2026?
-                </motion.h2>
+          {/* Title */}
+          <motion.h2
+            variants={itemVariants}
+            className="heading-2 mt-6 text-text-primary"
+          >
+            What is CPRN Summit 2026?
+          </motion.h2>
 
-                {/* Description */}
-                <motion.p
-                    variants={itemVariants}
-                    className="body-text mt-6 text-text-muted"
-                >
-                    The Collaborative Practices and Research Network (CPRN) Summit 2026
-                    is an international forum designed to bring together educators,
-                    researchers, policymakers, and practitioners to share knowledge,
-                    foster collaboration, and strengthen research networks across the
-                    region.
-                </motion.p>
-            </motion.div>
+          {/* Description */}
+          <motion.p
+            variants={itemVariants}
+            className="body-text mt-6 text-text-muted"
+          >
+            The Collaborative Practices and Research Network (CPRN) Summit 2026
+            is an international forum designed to bring together educators,
+            researchers, policymakers, and practitioners to share knowledge,
+            foster collaboration, and strengthen research networks across the
+            region.
+          </motion.p>
+        </motion.div>
 
-            {/* VALUE CARDS */}
-            <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-            className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3"
-            >
-                {/* Card 1 */}
-                <motion.div
-                    variants={itemVariants}
-                    className="group rounded-2xl border border-border bg-background p-8 text-center transition-all duration-300 ease-out hover:-translate-y-2 hover:border-primary hover:bg-primary"
-                >
-                    <h3 className="heading-3 text-text-primary transition-colors duration-300 group-hover:text-white">
-                    Knowledge Exchange
-                    </h3>
-                    <p className="body-text mt-4  text-text-muted transition-colors duration-300 group-hover:text-white/90">
-                    A platform for sharing research findings, best practices, and
-                    innovative ideas among academic and professional communities.
-                    </p>
-                </motion.div>
+        {/* VALUE CARDS */}
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3"
+        >
+          {/* Card 1 */}
+          <motion.div
+            variants={itemVariants}
+            className="group rounded-2xl border border-border bg-background p-8 text-center transition-all duration-300 ease-out hover:-translate-y-2 hover:border-primary hover:bg-primary"
+          >
+            <h3 className="heading-3 text-text-primary transition-colors duration-300 group-hover:text-white">
+              Knowledge Exchange
+            </h3>
+            <p className="body-text mt-4  text-text-muted transition-colors duration-300 group-hover:text-white/90">
+              A platform for sharing research findings, best practices, and
+              innovative ideas among academic and professional communities.
+            </p>
+          </motion.div>
 
-                {/* Card 2 */}
-                <motion.div
-                    variants={itemVariants}
-                    className="group rounded-2xl border border-border bg-background p-8 text-center transition-all duration-300 ease-out hover:-translate-y-2 hover:border-primary hover:bg-primary"
-                >
-                    <h3 className="heading-3 text-text-primary transition-colors duration-300 group-hover:text-white">
-                    Regional Collaboration
-                    </h3>
-                    <p className="body-text mt-4  text-text-muted transition-colors duration-300 group-hover:text-white/90">
-                    Encouraging cross-country partnerships to address shared
-                    challenges in education, research, and development.
-                    </p>
-                </motion.div>
+          {/* Card 2 */}
+          <motion.div
+            variants={itemVariants}
+            className="group rounded-2xl border border-border bg-background p-8 text-center transition-all duration-300 ease-out hover:-translate-y-2 hover:border-primary hover:bg-primary"
+          >
+            <h3 className="heading-3 text-text-primary transition-colors duration-300 group-hover:text-white">
+              Regional Collaboration
+            </h3>
+            <p className="body-text mt-4  text-text-muted transition-colors duration-300 group-hover:text-white/90">
+              Encouraging cross-country partnerships to address shared
+              challenges in education, research, and development.
+            </p>
+          </motion.div>
 
-                {/* Card 3 */}
-                <motion.div
-                    variants={itemVariants}
-                    className="group rounded-2xl border border-border bg-background p-8 text-center transition-all duration-300 ease-out hover:-translate-y-2 hover:border-primary hover:bg-primary"
-                >
-                    <h3 className="heading-3 text-text-primary transition-colors duration-300 group-hover:text-white">
-                    Sustainable Impact
-                    </h3>
-                    <p className="body-text mt-4  text-text-muted transition-colors duration-300 group-hover:text-white/90">
-                    Supporting long-term research networks and collaborative practices
-                    that contribute to sustainable regional growth.
-                    </p>
-                </motion.div>
-            </motion.div>
-        </div>
+          {/* Card 3 */}
+          <motion.div
+            variants={itemVariants}
+            className="group rounded-2xl border border-border bg-background p-8 text-center transition-all duration-300 ease-out hover:-translate-y-2 hover:border-primary hover:bg-primary"
+          >
+            <h3 className="heading-3 text-text-primary transition-colors duration-300 group-hover:text-white">
+              Sustainable Impact
+            </h3>
+            <p className="body-text mt-4  text-text-muted transition-colors duration-300 group-hover:text-white/90">
+              Supporting long-term research networks and collaborative practices
+              that contribute to sustainable regional growth.
+            </p>
+          </motion.div>
+        </motion.div>
+      </div>
     </section>
   );
 }
