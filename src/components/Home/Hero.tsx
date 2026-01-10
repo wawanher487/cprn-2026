@@ -81,12 +81,13 @@ export default function Hero() {
               variants={itemVariants}
               className="mt-10 flex flex-wrap gap-4"
             >
-              <Link
-                href="/registration"
+              <a
+                href="https://forms.gle/GBVwewEgqE68BjeN9"
+                target="_blank"
                 className="rounded-xl bg-secondary px-6 py-3 font-semibold text-white transition hover:bg-accent-hover"
               >
                 Register Now
-              </Link>
+              </a>
 
               <Link
                 href="/Programme/Important_dates"
