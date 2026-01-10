@@ -24,7 +24,7 @@ export default function Footer() {
             </div>
 
             <p className="mt-4 max-w-xs body-text text-text-muted">
-              Building Bridges to a Sustainable Future
+              SEAMEO Centre Policy Research Network
             </p>
           </div>
 
