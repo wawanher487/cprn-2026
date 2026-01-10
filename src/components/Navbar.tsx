@@ -134,7 +134,7 @@ export default function Navbar() {
               >
                 Presentasion Slides
               </Link>
-              <Link
+              {/* <Link
                 href="/Download/Call-For-Papers-New-Extension-Submission-Dates-10May2025.pdf"
                 className="block px-4 py-2 hover:bg-surface"
               >
@@ -151,7 +151,7 @@ export default function Navbar() {
                 className="block px-4 py-2 hover:bg-surface"
               >
                 CPRN Poster
-              </Link>
+              </Link> */}
             </div>
           </li>
         </ul>
@@ -292,7 +292,7 @@ export default function Navbar() {
                   <li>
                     <Link href="/presentations">Presentation Slides</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="/Download/Call-For-Papers-New-Extension-Submission-Dates-10May2025.pdf">
                       Abstract Guideline & Template
                     </Link>
@@ -306,7 +306,7 @@ export default function Navbar() {
                     <Link href="/Download/Call-For-Papers-New-Extension-Submission-Dates-10May2025.pdf">
                       CPRN Poster
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </li>
