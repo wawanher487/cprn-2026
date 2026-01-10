@@ -5,97 +5,117 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
 
-
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
-    transition: {
-      staggerChildren: 0.15,
-    },
+    transition: { staggerChildren: 0.15 },
   },
 };
 
-const itemVariants : Variants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: 24 },
   show: {
     opacity: 1,
     y: 0,
-    transition: {
-      duration: 0.6,
-      ease: [0.16, 1, 0.3, 1],
-    },
+    transition: { duration: 0.6, ease: [0.16, 1, 0.3, 1] },
   },
 };
 
-const imageVariants : Variants = {
-  hidden: { opacity: 0, x: 40 },
+const imageVariants: Variants = {
+  hidden: { opacity: 0, scale: 0.96 },
   show: {
     opacity: 1,
-    x: 0,
-    transition: {
-      duration: 0.8,
-      ease: [0.16, 1, 0.3, 1],
-    },
+    scale: 1,
+    transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] },
   },
 };
-
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-surface md:my-5">
-    <div className="mx-auto max-w-7xl px-6 pt-32 pb-20">
-        <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
+    <section className="relative overflow-hidden bg-linear-to-br from-orange-50 via-white to-blue-50">
+      {/* decorative soft accent */}
 
-          {/* TEXT Left */}
-            <motion.div variants={containerVariants} initial="hidden" animate="show">
-                {/* Subtitle */}
-                <motion.span variants={itemVariants} className="inline-block rounded-full bg-surface py-1 text-body text-secondary">
-                CPRN SUMMIT 2026
-                </motion.span>
-
-                {/* Heading */}
-                <motion.h1 variants={itemVariants} className="heading-1 mt-6 text-text-primary">
-                Collaborative Practices and Research Network Summit 2026
-                </motion.h1>
-
-                {/* Description */}
-                <motion.p variants={itemVariants} className="body-text mt-6 text-text-muted">
-                Bridging Research, Policy, and Practice: Pathways toward an Inclusive, Equitable, and Sustainable Futures
-                </motion.p>
-
-                {/* CTA */}
-                <div className="mt-8 flex flex-wrap gap-4">
-                <Link
-                    href="/registration"
-                    className="rounded-xl bg-primary px-6 py-3 text-white transition hover:opacity-90"
-                >
-                    Register Now
-                </Link>
-
-                <Link
-                    href="/Programme/Important_dates"
-                    className="rounded-xl border border-border px-6 py-3 text-secondary transition hover:bg-surface"
-                >
-                    View Programme
-                </Link>
-                </div>
+      <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
+        <div className="grid items-center gap-14 md:grid-cols-2">
+          {/* TEXT LEFT */}
+          <motion.div
+            variants={containerVariants}
+            initial={false}
+            animate="show"
+          >
+            <motion.div
+              variants={itemVariants}
+              className="mb-4 inline-flex items-center rounded-full bg-green-50 px-2 py-1 text-sm font-medium text-green-700"
+            >
+              Organized by SEAMEO CECCEP
             </motion.div>
 
-            {/* IMAGE AREA RIGHT */}
-            <motion.div variants={imageVariants} initial="hidden" animate="show" className="relative">
-                <Image
-                src="/hero_image.jpeg"
-                alt="CPRN Summit Illustration"
-                width={600}
-                height={420}
-                className="w-full rounded-2xl object-cover"
-                priority
-                />
-            </motion.div>
+            {/* Heading */}
+            <motion.h1
+              variants={itemVariants}
+              className="heading-1 max-w-xl leading-tight text-text-primary text-3xl sm:text-4xl lg:text-5xl"
+            >
+              SEAMEO Centre Policy Research Network (CPRN) Summit 2026
+            </motion.h1>
 
+            {/* Location */}
+            <motion.p
+              variants={itemVariants}
+              className="mt-3 text-lg font-semibold text-secondary"
+            >
+              Jakarta, Indonesia
+            </motion.p>
+
+            {/* Description */}
+            <motion.p
+              variants={itemVariants}
+              className="mt-4 max-w-xl body-text text-text-muted"
+            >
+              “Bridging Research, Policy, and Practice: Pathways toward an
+              Inclusive, Equitable, and Sustainable Futures”
+            </motion.p>
+
+            {/* CTA */}
+            <motion.div
+              variants={itemVariants}
+              className="mt-10 flex flex-wrap gap-4"
+            >
+              <Link
+                href="/registration"
+                className="rounded-xl bg-accent px-6 py-3 font-semibold text-white transition hover:bg-accent-hover"
+              >
+                Register Now
+              </Link>
+
+              <Link
+                href="/Programme/Important_dates"
+                className="rounded-xl border border-secondary px-6 py-3 font-semibold text-secondary transition hover:bg-secondary hover:text-white"
+              >
+                View Programme
+              </Link>
+            </motion.div>
+          </motion.div>
+
+          {/* IMAGE RIGHT */}
+          <motion.div
+            variants={imageVariants}
+            initial={false}
+            animate="show"
+            className="relative"
+          >
+            <div className="absolute inset-0 rounded-2xl bg-linear-to-tr from-orange-100/40 to-transparent" />
+            <Image
+              src="/hero_image.jpeg"
+              alt="CPRN Summit Illustration"
+              width={600}
+              height={420}
+              className="relative w-full rounded-2xl object-cover shadow-xl"
+              priority
+            />
+          </motion.div>
         </div>
-    </div>
+      </div>
     </section>
-);
+  );
 }

@@ -11,16 +11,16 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="bg-surface">
+      <main className="pt-20">
         {/* content */}
         <Hero />
         <About />
-        <Themes/>
-        <WhyJoin/>
-        <Testimonials/>
-        <SponsorBy/>
+        <Themes />
+        <WhyJoin />
+        {/* <Testimonials/> */}
+        <SponsorBy />
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
 }

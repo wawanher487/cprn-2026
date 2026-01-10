@@ -1,5 +1,28 @@
 @import "tailwindcss";
 
+/* ============================= */
+/* BASE RESET (WAJIB TAILWIND 4) */
+/* ============================= */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    font-family: var(--font-body);
+  }
+}
 
 /* ============================= */
 /* CPRN 2026 DESIGN TOKENS       */
@@ -7,37 +30,42 @@
 
 @theme {
   /* PRIMARY – Dark Green */
-  --color-primary: #38761d;
+  --color-primary: #00923f;
 
   /* SECONDARY – Blue */
-  --color-secondary: #00529b;
+  --color-secondary: #0776ba;
 
   /* ACCENT – Orange */
-  --color-accent: #FF6600;
+  --color-accent: #ff6600;
 
-  /* ACCENT – Orange ceccep*/
-  /* --color-accent: #ffb669; */
+  --color-accent-soft-1: #ffe3c7;
+  --color-accent-soft-2: #ffcc9f;
+  --color-accent-soft-3: #f7a248;
+  --color-accent-hover: #ff7c36;
 
   /* NEUTRALS */
-  --color-background: #ffffff;  /* putih */
-  --color-surface: #f8fafc;  /* biru muda */
-  --color-text-primary: #0f172a; /* hitam */
-  --color-text-muted: #475569;  /* hitam biru */
-  --color-border: #cbd5e1;  /* abu */
+  --color-background: #ffffff;
+  --color-surface: #f8fafc;
+  --color-text-primary: #0f172a;
+  --color-text-muted: #475569;
+  --color-border: #cbd5e1;
 
   /* FONT FAMILY */
   --font-body: var(--font-body);
   --font-heading: var(--font-heading);
 
   /* TYPOGRAPHY SCALE */
-  --text-h1: 2.5rem; /* 40px */
-  --text-h2: 2rem; /* 32px */
-  --text-h3: 1.5rem; /* 24px */
-  --text-h4: 1.25rem; /* 20px */
-  --text-body: 1rem; /* 16px */
+  --text-h1: 2.5rem;
+  --text-h2: 2rem;
+  --text-h3: 1.5rem;
+  --text-h4: 1.25rem;
+  --text-body: 1rem;
   --text-small: 0.875rem;
 }
 
+/* ============================= */
+/* UTILITIES                     */
+/* ============================= */
 @layer utilities {
   .heading-1 {
     font-family: var(--font-heading);

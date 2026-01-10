@@ -27,7 +27,7 @@ const itemVariants: Variants = {
 
 export default function About() {
   return (
-    <section className="bg-surface md:my-12">
+    <section className="bg-surface md:py-12">
         <div id="about"  className="mx-auto max-w-7xl px-6 py-10">
                 <motion.div
                 variants={containerVariants}

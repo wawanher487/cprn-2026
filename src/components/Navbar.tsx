@@ -38,21 +38,24 @@ export default function Navbar() {
 
   return (
     <header
-      className={` fixed top-0 z-50 w-full bg-background border-b border-border transition-transform duration-300 ease-in-out ${
+      className={`fixed top-0 left-0 right-0 z-50 bg-accent-hover border-b border-border transition-transform duration-300 ease-in-out ${
         hideNavbar ? "-translate-y-full" : "translate-y-0"
       }`}
     >
-      <nav className="mx-auto flex h-20 max-w-6xl items-center justify-between px-6 ">
+      <nav className="mx-auto flex h-16 lg:h-20  max-w-6xl items-center justify-between px-6 lg:px-0">
         {/* LOGO */}
-        <Link href="/" className="flex items-center gap-1">
-          <Image
-            src="/logo_cprn.png"
-            alt="CPRN 2026 Logo"
-            width={150}
-            height={40}
-            className="lg:w-[175px] w-[140px]"
-            priority
-          />
+        <Link href="/" className="flex items-center">
+          <div className="border-b-3 border-green-600 py-1 pb-0.5">
+            <Image
+              src="/logo_navbar/logo_cprn_2026.png"
+              alt="CPRN 2026 Logo"
+              width={175}
+              height={85}
+              sizes="(max-width: 868px) 140px, 175px"
+              className="w-35 lg:w-43.75 h-auto bg-white rounded-xl px-2"
+              priority
+            />
+          </div>
         </Link>
 
         {/* Desktop MENU */}
@@ -116,9 +119,9 @@ export default function Navbar() {
             </div>
           </li>
 
-          <li>
+          {/* <li>
             <Link href="/#testimonials">Testimonials</Link>
-          </li>
+          </li> */}
 
           {/* DOWNLOAD  group*/}
           <li className="relative group">
@@ -264,11 +267,11 @@ export default function Navbar() {
               </div>
             </li>
 
-            <li>
+            {/* <li>
               <Link href="/#testimonials" onClick={() => setMenuOpen(false)}>
                 Testimonials
               </Link>
-            </li>
+            </li> */}
 
             <li>
               <button
