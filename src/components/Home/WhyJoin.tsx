@@ -41,7 +41,7 @@ return (
                 key={index}
                 className={`rounded-xl md:rounded-2xl px-4 py-1 md:px-8 transition-colors duration-300 ${
                 activeIndex === index
-                    ? "bg-primary text-white"
+                    ? "bg-secondary text-white"
                     : "border border-border"
                 }`}
             >

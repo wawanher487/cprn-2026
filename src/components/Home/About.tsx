@@ -76,7 +76,7 @@ export default function About() {
           {/* Card 1 */}
           <motion.div
             variants={itemVariants}
-            className="group rounded-2xl border border-border bg-background p-8 text-center transition-all duration-300 ease-out hover:-translate-y-2 hover:border-primary hover:bg-primary"
+            className="group rounded-2xl border border-border bg-background p-8 text-center transition-all duration-300 ease-out hover:-translate-y-2 hover:border-secondary hover:bg-secondary"
           >
             <h3 className="heading-3 text-text-primary transition-colors duration-300 group-hover:text-white">
               Knowledge Exchange
@@ -90,7 +90,7 @@ export default function About() {
           {/* Card 2 */}
           <motion.div
             variants={itemVariants}
-            className="group rounded-2xl border border-border bg-background p-8 text-center transition-all duration-300 ease-out hover:-translate-y-2 hover:border-primary hover:bg-primary"
+            className="group rounded-2xl border border-border bg-background p-8 text-center transition-all duration-300 ease-out hover:-translate-y-2 hover:border-secondary hover:bg-secondary"
           >
             <h3 className="heading-3 text-text-primary transition-colors duration-300 group-hover:text-white">
               Regional Collaboration
@@ -104,7 +104,7 @@ export default function About() {
           {/* Card 3 */}
           <motion.div
             variants={itemVariants}
-            className="group rounded-2xl border border-border bg-background p-8 text-center transition-all duration-300 ease-out hover:-translate-y-2 hover:border-primary hover:bg-primary"
+            className="group rounded-2xl border border-border bg-background p-8 text-center transition-all duration-300 ease-out hover:-translate-y-2 hover:border-secondary hover:bg-secondary"
           >
             <h3 className="heading-3 text-text-primary transition-colors duration-300 group-hover:text-white">
               Sustainable Impact
