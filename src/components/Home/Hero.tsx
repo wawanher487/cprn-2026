@@ -54,7 +54,7 @@ export default function Hero() {
             {/* Heading */}
             <motion.h1
               variants={itemVariants}
-              className="heading-1 max-w-xl leading-tight text-text-primary text-3xl sm:text-4xl lg:text-5xl"
+              className="heading-1 max-w-xl leading-tight text-secondary text-3xl sm:text-4xl lg:text-5xl"
             >
               SEAMEO Centre Policy Research Network (CPRN) Summit 2026
             </motion.h1>
@@ -62,7 +62,7 @@ export default function Hero() {
             {/* Location */}
             <motion.p
               variants={itemVariants}
-              className="mt-3 text-lg font-semibold text-secondary"
+              className="mt-3 text-lg font-semibold text-accent"
             >
               Jakarta, Indonesia
             </motion.p>
@@ -70,7 +70,7 @@ export default function Hero() {
             {/* Description */}
             <motion.p
               variants={itemVariants}
-              className="mt-4 max-w-xl body-text text-text-muted"
+              className="mt-4 max-w-xl body-text text-text-primary"
             >
               “Bridging Research, Policy, and Practice: Pathways toward an
               Inclusive, Equitable, and Sustainable Futures”

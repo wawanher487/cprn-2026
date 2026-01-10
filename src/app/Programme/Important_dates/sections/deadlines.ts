@@ -14,7 +14,7 @@ export const deadlines = [
     date: "15 March 2026",
   },
   {
-    title: "Abstract Acceptance Information 1 and Accepted Regular",
+    title: "Abstract Acceptance Information 1 And Accepted Regular",
     date: "15 April 2026",
   },
   {
