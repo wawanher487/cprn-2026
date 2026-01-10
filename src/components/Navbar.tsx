@@ -38,7 +38,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 bg-accent-hover border-b border-border transition-transform duration-300 ease-in-out ${
+      className={`fixed top-0 left-0 right-0 z-50 bg-background border-b border-border transition-transform duration-300 ease-in-out ${
         hideNavbar ? "-translate-y-full" : "translate-y-0"
       }`}
     >
@@ -59,7 +59,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop MENU */}
-        <ul className="hidden lg:flex items-center gap-6 text-secondary font-medium">
+        <ul className="hidden lg:flex items-center gap-6 text-text-primary font-medium">
           <li>
             <Link href="/">Home</Link>
           </li>
@@ -159,7 +159,7 @@ export default function Navbar() {
         {/* HAMBURGER */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="lg:hidden text-secondary heading-3"
+          className="lg:hidden text-text-primary heading-3"
           aria-label="Toggle menu"
         >
           ☰
@@ -174,7 +174,7 @@ export default function Navbar() {
               : "max-h-0 opacity-0 -translate-y-2"
           }`}
         >
-          <ul className="flex flex-col px-6 py-4 space-y-4 text-secondary font-medium">
+          <ul className="flex flex-col px-6 py-4 space-y-4 text-text-primary font-medium">
             <li>
               <Link href="/" onClick={() => setMenuOpen(false)}>
                 Home
@@ -204,7 +204,7 @@ export default function Navbar() {
                     : "max-h-0 opacity-0"
                 }`}
               >
-                <ul className="ml-4 mt-2 space-y-2 text-small text-secondary">
+                <ul className="ml-4 mt-2 space-y-2 text-small text-text-primary">
                   <li>
                     <Link href="/Programme/Brief_programme">
                       Brief Programme
@@ -252,7 +252,7 @@ export default function Navbar() {
                     : "max-h-0 opacity-0"
                 }`}
               >
-                <ul className="ml-4 mt-2 space-y-2 text-small text-secondary">
+                <ul className="ml-4 mt-2 space-y-2 text-small text-text-primary">
                   <li>
                     <Link href="/Programme/Important_dates#summit-venue">
                       Venue Information
@@ -288,7 +288,7 @@ export default function Navbar() {
                     : "max-h-0 opacity-0"
                 }`}
               >
-                <ul className="ml-4 mt-2 space-y-2 text-small text-secondary">
+                <ul className="ml-4 mt-2 space-y-2 text-small text-text-primary">
                   <li>
                     <Link href="/presentations">Presentation Slides</Link>
                   </li>

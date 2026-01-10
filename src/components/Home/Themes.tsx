@@ -26,7 +26,7 @@ const itemVariants: Variants = {
 
 export default function Themes() {
   return (
-    <section className="bg-surface">
+    <section className="relative overflow-hidden bg-linear-to-br from-orange-50 via-white to-blue-50">
       <div id="themes" className="mx-auto max-w-7xl px-6 py-20">
         {/* ===================== */}
         {/* KEYNOTE SPEAKERS */}

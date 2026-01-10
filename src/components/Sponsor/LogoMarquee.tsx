@@ -23,7 +23,7 @@ export function LogoMarquee({ logos }: { logos: Logo[] }) {
             {[...logos, ...logos].map((item, index) => (
             <div
                 key={`${item.name}-${index}`}
-                className="flex min-w-[120px] items-center justify-center"
+                className="flex min-w-30 items-center justify-center"
             >
                 <img
                 src={item.logo}

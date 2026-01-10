@@ -29,14 +29,20 @@
 /* ============================= */
 
 @theme {
+  /* SECONDARY – Blue */
+  /* --color-secondary: #0776ba; */
+
+  /* ACCENT – Orange */
+  /* --color-accent: #ff6600; */
+
   /* PRIMARY – Dark Green */
   --color-primary: #00923f;
 
-  /* SECONDARY – Blue */
-  --color-secondary: #0776ba;
+  /* SECONDARY – orange */
+  --color-secondary: #ff6600;
 
-  /* ACCENT – Orange */
-  --color-accent: #ff6600;
+  /* ACCENT – blue */
+  --color-accent: #0776ba;
 
   --color-accent-soft-1: #ffe3c7;
   --color-accent-soft-2: #ffcc9f;

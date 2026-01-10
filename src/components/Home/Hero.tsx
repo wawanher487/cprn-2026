@@ -83,14 +83,14 @@ export default function Hero() {
             >
               <Link
                 href="/registration"
-                className="rounded-xl bg-accent px-6 py-3 font-semibold text-white transition hover:bg-accent-hover"
+                className="rounded-xl bg-secondary px-6 py-3 font-semibold text-white transition hover:bg-accent-hover"
               >
                 Register Now
               </Link>
 
               <Link
                 href="/Programme/Important_dates"
-                className="rounded-xl border border-secondary px-6 py-3 font-semibold text-secondary transition hover:bg-secondary hover:text-white"
+                className="rounded-xl border border-secondary px-6 py-3 font-semibold text-secondary transition hover:bg-accent-hover hover:text-white"
               >
                 View Programme
               </Link>
