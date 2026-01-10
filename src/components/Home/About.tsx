@@ -51,18 +51,6 @@ export default function About() {
           >
             What is CPRN Summit 2026?
           </motion.h2>
-
-          {/* Description */}
-          <motion.p
-            variants={itemVariants}
-            className="body-text mt-6 text-text-muted"
-          >
-            The Collaborative Practices and Research Network (CPRN) Summit 2026
-            is an international forum designed to bring together educators,
-            researchers, policymakers, and practitioners to share knowledge,
-            foster collaboration, and strengthen research networks across the
-            region.
-          </motion.p>
         </motion.div>
 
         {/* VALUE CARDS */}
@@ -71,47 +59,26 @@ export default function About() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3"
+          className="mt-16 grid grid-cols-1"
         >
-          {/* Card 1 */}
+          {/* Card */}
           <motion.div
             variants={itemVariants}
             className="group rounded-2xl border border-border bg-background p-8 text-center transition-all duration-300 ease-out hover:-translate-y-2 hover:border-secondary hover:bg-secondary"
           >
-            <h3 className="heading-3 text-text-primary transition-colors duration-300 group-hover:text-white">
-              Knowledge Exchange
-            </h3>
             <p className="body-text mt-4  text-text-muted transition-colors duration-300 group-hover:text-white/90">
-              A platform for sharing research findings, best practices, and
-              innovative ideas among academic and professional communities.
-            </p>
-          </motion.div>
-
-          {/* Card 2 */}
-          <motion.div
-            variants={itemVariants}
-            className="group rounded-2xl border border-border bg-background p-8 text-center transition-all duration-300 ease-out hover:-translate-y-2 hover:border-secondary hover:bg-secondary"
-          >
-            <h3 className="heading-3 text-text-primary transition-colors duration-300 group-hover:text-white">
-              Regional Collaboration
-            </h3>
-            <p className="body-text mt-4  text-text-muted transition-colors duration-300 group-hover:text-white/90">
-              Encouraging cross-country partnerships to address shared
-              challenges in education, research, and development.
-            </p>
-          </motion.div>
-
-          {/* Card 3 */}
-          <motion.div
-            variants={itemVariants}
-            className="group rounded-2xl border border-border bg-background p-8 text-center transition-all duration-300 ease-out hover:-translate-y-2 hover:border-secondary hover:bg-secondary"
-          >
-            <h3 className="heading-3 text-text-primary transition-colors duration-300 group-hover:text-white">
-              Sustainable Impact
-            </h3>
-            <p className="body-text mt-4  text-text-muted transition-colors duration-300 group-hover:text-white/90">
-              Supporting long-term research networks and collaborative practices
-              that contribute to sustainable regional growth.
+              Southeast Asia’s cultural and social diversity is a defining
+              strength of the region, yet persistent inequality continues to
+              hinder inclusive and sustainable development. Marginalized groups
+              face barriers in accessing quality education and basic support,
+              often shaped by policies that do not fully recognize their lived
+              realities. The CPRN Summit 2026, themed “Bridging Research,
+              Policy, and Practice: Pathways toward Inclusive, Equitable, and
+              Sustainable Futures,” focuses on strengthening genuine partnership
+              and cross-sector collaboration to connect research, policy, and
+              practice. The Summit seeks to generate practical solutions and
+              measurable change toward a more inclusive, equitable, and
+              sustainable Southeast Asia.
             </p>
           </motion.div>
         </motion.div>
