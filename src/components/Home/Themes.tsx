@@ -52,13 +52,13 @@ export default function Themes() {
               transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
               className="group text-center"
             >
-              <div className="mx-auto w-48 overflow-hidden rounded-2xl border-2 border-secondary transition-colors duration-300 group-hover:border-sencondary">
+              <div className="mx-auto w-48 overflow-hidden rounded-2xl">
                 <Image
-                  src="/avatar_keynote.png"
+                  src="/keynote/1.png"
                   alt="Dr Margarita Pavlova"
                   width={300}
                   height={300}
-                  className="w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+                  className="w-full h-full transition-transform duration-500 ease-out group-hover:scale-105"
                 />
               </div>
 
@@ -77,13 +77,13 @@ export default function Themes() {
               transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
               className="group text-center"
             >
-              <div className="mx-auto w-48 overflow-hidden rounded-2xl border-2 border-secondary transition-colors duration-300 group-hover:border-sencondary">
+              <div className="mx-auto w-48 overflow-hidden rounded-2xl">
                 <Image
-                  src="/avatar_keynote.png"
+                  src="/keynote/2.png"
                   alt="Dr Margarita Pavlova"
                   width={300}
                   height={300}
-                  className="w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+                  className="w-full h-full transition-transform duration-500 ease-out group-hover:scale-105"
                 />
               </div>
 
@@ -102,9 +102,9 @@ export default function Themes() {
               transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
               className="group text-center"
             >
-              <div className="mx-auto w-48 overflow-hidden rounded-2xl border-2 border-secondary transition-colors duration-300 group-hover:border-seoncondary">
+              <div className="mx-auto w-48 overflow-hidden rounded-2xl">
                 <Image
-                  src="/avatar_keynote.png"
+                  src="/keynote/3.png"
                   alt="Tony McAleavy"
                   width={300}
                   height={300}
@@ -128,9 +128,9 @@ export default function Themes() {
               transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
               className="group text-center"
             >
-              <div className="mx-auto w-48 overflow-hidden rounded-2xl border-2 border-secondary transition-colors duration-300 group-hover:border-seoncondary">
+              <div className="mx-auto w-48 overflow-hidden rounded-2xl">
                 <Image
-                  src="/avatar_keynote.png"
+                  src="/keynote/4.png"
                   alt="Tony McAleavy"
                   width={300}
                   height={300}
@@ -153,9 +153,9 @@ export default function Themes() {
               transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
               className="group text-center"
             >
-              <div className="mx-auto w-48 overflow-hidden rounded-2xl border-2 border-secondary transition-colors duration-300 group-hover:border-seoncondary">
+              <div className="mx-auto w-48 overflow-hidden rounded-2xl">
                 <Image
-                  src="/avatar_keynote.png"
+                  src="/keynote/5.png"
                   alt="Tony McAleavy"
                   width={300}
                   height={300}
