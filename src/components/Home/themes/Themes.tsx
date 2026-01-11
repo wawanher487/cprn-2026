@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
+import { summitThemes } from "./themes-data";
+import { useState } from "react";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -25,6 +27,8 @@ const itemVariants: Variants = {
 };
 
 export default function Themes() {
+  const [activeTheme, setActiveTheme] = useState<string | null>(null);
+
   return (
     <section className="relative overflow-hidden bg-linear-to-br from-orange-50 via-white to-blue-50">
       <div id="themes" className="mx-auto max-w-7xl px-6 py-20">
@@ -190,91 +194,67 @@ export default function Themes() {
             Summit Sub-Themes
           </motion.h2>
 
-          <div className="mt-12 space-y-12 border-t border-border pt-8">
-            {/* Theme Item */}
-            <motion.div
-              variants={itemVariants}
-              whileHover={{ x: 6 }}
-              transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-              className="grid grid-cols-1 gap-6 md:grid-cols-3"
-            >
-              <h3 className="heading-3 text-text-primary md:col-span-1">
-                EDUCATION
-              </h3>
-              <div className="md:col-span-2">
-                <h4 className="heading-4 text-text-primary">
-                  Education Transformation for an Inclusive and Future-Ready
-                  Society
-                </h4>
-                <p className="body-text mt-3 text-text-muted text-justify">
-                  Explore how education systems can be transformed to promote
-                  equity, strengthen access and participation, and improve
-                  learning quality across all levels. This pillar highlights
-                  inclusive policies that address structural barriers, the
-                  integration of future-oriented skills and digital
-                  technologies, seamless transitions throughout the education
-                  lifecycle, strengthened teacher professionalism, and robust
-                  assessment and governance systems to ensure resilient,
-                  high-quality, and lifelong learning for all.
-                </p>
-              </div>
-            </motion.div>
+          <div className="mt-12 space-y-16 border-t border-border pt-10">
+            {summitThemes.map((pillar, index) => (
+              <motion.div
+                key={index}
+                variants={itemVariants}
+                className="grid grid-cols-1 gap-8 md:grid-cols-3"
+              >
+                {/* Pillar Title */}
+                <div className="md:col-span-1">
+                  <h3 className="heading-3 text-text-primary">
+                    {pillar.pillar}
+                  </h3>
+                  <p className="mt-2 text-sm text-text-muted">{pillar.title}</p>
+                </div>
 
-            {/* Theme Item */}
-            <motion.div
-              variants={itemVariants}
-              whileHover={{ x: 6 }}
-              transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-              className="grid grid-cols-1 gap-6 border-t border-border pt-8 md:grid-cols-3"
-            >
-              <h3 className="heading-3 text-text-primary md:col-span-1">
-                SCIENCE
-              </h3>
-              <div className="md:col-span-2">
-                <h4 className="heading-4 text-text-primary">
-                  Science, Innovation, and Inclusive Policy for Sustainable
-                  Development
-                </h4>
-                <p className="body-text mt-3 text-text-muted text-justify">
-                  Explore the role of science and innovation in shaping
-                  evidence-based public policies that address societal
-                  challenges across health, education, environment, and
-                  technology. This pillar highlights STEAM education for
-                  sustainability, inclusive participation of youth, women, and
-                  marginalized groups in science, regional collaboration through
-                  science diplomacy, and responsible innovation that integrates
-                  ethical considerations and indigenous knowledge to support
-                  sustainable and equitable development.
-                </p>
-              </div>
-            </motion.div>
+                {/* Sub Themes Accordion */}
+                <div className="md:col-span-2 space-y-4">
+                  {pillar.themes.map((theme, idx) => {
+                    const themeId = `${index}-${idx}`;
+                    const isOpen = activeTheme === themeId;
 
-            {/* Theme Item */}
-            <motion.div
-              variants={itemVariants}
-              whileHover={{ x: 6 }}
-              transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-              className="grid grid-cols-1 gap-6 border-t border-border pt-8 md:grid-cols-3"
-            >
-              <h3 className="heading-3 text-text-primary md:col-span-1">
-                CULTURE
-              </h3>
-              <div className="md:col-span-2">
-                <h4 className="heading-4 text-text-primary">
-                  Culture, Creativity, and Inclusive Societies
-                </h4>
-                <p className="body-text mt-3 text-text-muted text-justify">
-                  Explore how cultural policies and creative practices
-                  strengthen identity, inclusion, and peacebuilding in diverse
-                  societies. This pillar highlights the safeguarding of
-                  intangible cultural heritage, the growth of creative and
-                  cultural industries for inclusive economic development, the
-                  integration of cultural rights into education, and the ethical
-                  use of digital technologies to ensure fair representation,
-                  community participation, and intergenerational justice.
-                </p>
-              </div>
-            </motion.div>
+                    return (
+                      <div
+                        key={themeId}
+                        className={`rounded-xl border p-5 transition ${
+                          isOpen
+                            ? "bg-secondary text-white"
+                            : "bg-white/70 hover:shadow-md"
+                        }`}
+                      >
+                        <button
+                          onClick={() =>
+                            setActiveTheme(isOpen ? null : themeId)
+                          }
+                          className="flex w-full items-start justify-between gap-4 text-left"
+                        >
+                          <h4 className="font-semibold">
+                            {idx + 1}. {theme.title}
+                          </h4>
+                          <span className="text-xl">{isOpen ? "−" : "+"}</span>
+                        </button>
+
+                        <motion.div
+                          initial={false}
+                          animate={{
+                            height: isOpen ? "auto" : 0,
+                            opacity: isOpen ? 1 : 0,
+                          }}
+                          transition={{ duration: 0.35, ease: "easeInOut" }}
+                          className="overflow-hidden"
+                        >
+                          <p className="mt-4 text-sm leading-relaxed text-justify">
+                            {theme.description}
+                          </p>
+                        </motion.div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </motion.div>
+            ))}
           </div>
         </motion.div>
       </div>
