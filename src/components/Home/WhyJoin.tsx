@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function WhyJoin() {
   const [activeIndex, setActiveIndex] = useState<number | null>(0);
-  
+
   const reasons = [
     {
       title: "Drive Impact through Equity & Sustainability",
@@ -51,8 +51,8 @@ export default function WhyJoin() {
               }
               className="flex w-full items-start justify-between gap-4 py-4 md:py-6"
             >
-              <h3 className="font-heading font-semibold text-base md:text-lg lg:text-lg">
-                {String(index + 1).padStart(2, "0")} – {item.title}
+              <h3 className="font-heading text-justify font-semibold text-base md:text-lg lg:text-lg">
+                {String(index + 1).padStart(2)+ "."}  {item.title}
               </h3>
               <span className="flex h-8 w-8 items-center justify-center rounded-full border-border text-lg md:text-2xl">
                 {activeIndex === index ? "×" : "+"}
@@ -68,7 +68,7 @@ export default function WhyJoin() {
               transition={{ duration: 0.4 }}
               className="overflow-hidden"
             >
-              <div className="pb-5 md:pb-6 text-sm md:text-base leading-relaxed">
+              <div className="pb-5 text-justify md:pb-6 text-sm md:text-base leading-relaxed">
                 {item.content}
               </div>
             </motion.div>
