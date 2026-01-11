@@ -72,13 +72,17 @@ export default function About() {
               hinder inclusive and sustainable development. Marginalized groups
               face barriers in accessing quality education and basic support,
               often shaped by policies that do not fully recognize their lived
-              realities. The CPRN Summit 2026, themed “Bridging Research,
-              Policy, and Practice: Pathways toward Inclusive, Equitable, and
-              Sustainable Futures,” focuses on strengthening genuine partnership
-              and cross-sector collaboration to connect research, policy, and
-              practice. The Summit seeks to generate practical solutions and
-              measurable change toward a more inclusive, equitable, and
-              sustainable Southeast Asia.
+              realities. The CPRN Summit 2026, themed{" "}
+              <span className="font-bold">
+                {" "}
+                “Bridging Research, Policy, and Practice: Pathways toward
+                Inclusive, Equitable, and Sustainable Futures,”
+              </span>{" "}
+              focuses on strengthening genuine partnership and cross-sector
+              collaboration to connect research, policy, and practice. The
+              Summit seeks to generate practical solutions and measurable change
+              toward a more inclusive, equitable, and sustainable Southeast
+              Asia.
             </p>
           </motion.div>
         </motion.div>
