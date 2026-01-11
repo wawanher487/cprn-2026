@@ -171,7 +171,7 @@ export default function Themes() {
                 Datuk Dr. Habibah Abdul Rahim
               </h3>
               <p className="body-text mt-2 text-text-muted">
-                Direktur Sekretariat SEAMEO
+                Director of SEAMEO Secretariat
               </p>
             </motion.div>
           </div>
