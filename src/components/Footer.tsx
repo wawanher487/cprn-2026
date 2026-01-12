@@ -23,7 +23,7 @@ export default function Footer() {
               />
             </div>
 
-            <p className="mt-4 max-w-xs body-text text-text-muted">
+            <p className="mt-4 max-w-xs body-text text-text-primary">
               SEAMEO Centre Policy Research Network
             </p>
           </div>
