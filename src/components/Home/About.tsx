@@ -27,7 +27,7 @@ const itemVariants: Variants = {
 
 export default function About() {
   return (
-    <section className="relative overflow-hidden bg-linear-to-br from-blue-50 via-white to-orange-50 pb-20 pt-20 mb-10 md:pt-10">
+    <section className="relative overflow-hidden bg-linear-to-br from-blue-50 via-white to-orange-50 pb-25 pt-20 md:pt-10">
       <div id="about" className="mx-auto max-w-7xl px-6 py-10">
         <motion.div
           variants={containerVariants}
