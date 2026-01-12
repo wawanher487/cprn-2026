@@ -64,7 +64,7 @@ export default function Hero() {
               variants={itemVariants}
               className="mt-3 text-lg font-semibold text-accent"
             >
-              Jakarta, Indonesia
+              09–11 June 2026 | Jakarta, Indonesia
             </motion.p>
 
             {/* Description */}
@@ -105,9 +105,9 @@ export default function Hero() {
             animate="show"
             className="relative"
           >
-            <div className="absolute inset-0 rounded-2xl bg-linear-to-tr from-orange-100/40 to-transparent" />
+            <div className="absolute inset-0 rounded-2xl bg-linear-to-tr from-orange-100/40 to-transparent"/>
             <Image
-              src="/hero_image.jpeg"
+              src="/home/home_CPRN2025.jpg"
               alt="CPRN Summit Illustration"
               width={600}
               height={420}

@@ -25,16 +25,16 @@ export default function SponsorBy() {
   return (
     <section className="relative overflow-hidden bg-linear-to-br from-blue-50 via-background to-orange-50 py-10 md:py-20 space-y-14">
       {/* sterring committee */}
-      <div className="mx-auto max-w-5xl px-4">
+      <div className="mx-auto max-w-sm">
         <p className="text-small text-center uppercase tracking-widest text-text-muted">
           Steering Committee by
         </p>
 
         {/* Desktop */}
-        <div className="mt-6 hidden md:grid grid-cols-2 gap-6">
+        <div className="mt-6 hidden md:grid grid-cols-2">
           {sterringCommittee.map((item) => (
             <motion.div key={item.name} whileHover={{ scale: 1.03 }}>
-              <div className="flex h-28 items-center justify-center rounded-xl bg-background p-4 shadow-sm grayscale hover:grayscale-0 transition">
+              <div className="flex h-28 items-center justify-center hover:grayscale-0 transition">
                 <img
                   src={item.logo}
                   alt={item.name}
@@ -61,7 +61,7 @@ export default function SponsorBy() {
         {organizers.length === 1 ? (
           <div className="mt-6 hidden md:flex justify-center">
             <motion.div whileHover={{ scale: 1.03 }}>
-              <div className="flex h-28 w-64 items-center justify-center rounded-xl bg-background p-4 shadow-sm grayscale hover:grayscale-0 transition">
+              <div className="flex h-28 w-64 items-center justify-center hover:grayscale-0 transition">
                 <img
                   src={organizers[0].logo}
                   alt={organizers[0].name}
@@ -74,7 +74,7 @@ export default function SponsorBy() {
           <div className="mt-6 hidden md:grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
             {organizers.map((item) => (
               <motion.div key={item.name} whileHover={{ scale: 1.03 }}>
-                <div className="flex h-28 items-center justify-center rounded-xl bg-background p-4 shadow-sm grayscale hover:grayscale-0 transition">
+                <div className="flex h-28 items-center justify-center hover:grayscale-0 transition">
                   <img
                     src={item.logo}
                     alt={item.name}
@@ -93,7 +93,7 @@ export default function SponsorBy() {
       </div>
 
       {/* CO-ORGANIZERS */}
-      <div className="mx-auto max-w-5xl px-4">
+      <div className="mx-auto max-w-3xl px-4">
         <p className="text-small text-center uppercase tracking-widest text-text-muted">
           Co-Organizing by
         </p>
@@ -102,7 +102,7 @@ export default function SponsorBy() {
         <div className="mt-6 hidden md:grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {coOrganizers.map((item) => (
             <motion.div key={item.name} whileHover={{ scale: 1.05 }}>
-              <div className="flex h-28 items-center justify-center rounded-xl bg-background p-4 shadow-sm grayscale hover:grayscale-0 transition">
+              <div className="flex h-28 items-center justify-center hover:grayscale-0 transition">
                 <img
                   src={item.logo}
                   alt={item.name}

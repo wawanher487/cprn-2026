@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-border bg-background">
+    <footer className="border-t border-border bg-secondary/80">
       <div className="mx-auto max-w-7xl px-6 py-14">
         {/* GRID UTAMA */}
         <div className="grid gap-10 md:grid-cols-4">
@@ -33,12 +33,12 @@ export default function Footer() {
             <h4 className="heading-4 text-text-primary">CPRN</h4>
             <ul className="mt-4 space-y-2 text-small text-text-muted">
               <li>
-                <Link href="#about" className="hover:text-primary">
+                <Link href="#about" className="hover:text-background">
                   About CPRN
                 </Link>
               </li>
               <li>
-                <Link href="/" className="hover:text-primary">
+                <Link href="/" className="hover:text-background">
                   CPRN 2026
                 </Link>
               </li>
@@ -50,22 +50,22 @@ export default function Footer() {
             <h4 className="heading-4 text-text-primary">Participants</h4>
             <ul className="mt-4 space-y-2 text-small text-text-muted">
               <li>
-                <Link href="/" className="hover:text-primary">
+                <Link href="/" className="hover:text-background">
                   Programmes
                 </Link>
               </li>
               <li>
-                <Link href="/" className="hover:text-primary">
+                <Link href="/" className="hover:text-background">
                   Important Dates
                 </Link>
               </li>
               <li>
-                <Link href="/" className="hover:text-primary">
+                <Link href="/" className="hover:text-background">
                   Concept Notes
                 </Link>
               </li>
               <li>
-                <Link href="/" className="hover:text-primary">
+                <Link href="/" className="hover:text-background">
                   Summit Fee
                 </Link>
               </li>
@@ -77,13 +77,13 @@ export default function Footer() {
             <h4 className="heading-4 text-text-primary">Get in Touch</h4>
             <ul className="mt-4 space-y-2 text-small text-text-muted">
               <li>
-                <p className="hover:text-primary">Contact Us</p>
+                <p className="hover:text-background">Contact Us</p>
               </li>
               <li>
                 <a
                   href="https://web.seameo-ceccep.org"
                   target="_blank"
-                  className="hover:text-primary"
+                  className="hover:text-background"
                 >
                   SEAMEO CECCEP
                 </a>

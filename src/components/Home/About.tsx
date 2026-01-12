@@ -27,7 +27,7 @@ const itemVariants: Variants = {
 
 export default function About() {
   return (
-    <section className="relative overflow-hidden bg-linear-to-br from-blue-50 via-white to-orange-50 pb-22">
+    <section className="relative overflow-hidden bg-linear-to-br from-blue-50 via-white to-orange-50 pb-20 pt-20 md:pt-10">
       <div id="about" className="mx-auto max-w-7xl px-6 py-10">
         <motion.div
           variants={containerVariants}
@@ -64,9 +64,9 @@ export default function About() {
           {/* Card */}
           <motion.div
             variants={itemVariants}
-            className="group rounded-2xl border border-border bg-background p-8 text-center transition-all duration-300 ease-out hover:-translate-y-2 hover:border-secondary hover:bg-secondary"
+            className="group rounded-2xl border border-border bg-background p-4 text-center transition-all duration-300 ease-out hover:-translate-y-2 hover:border-secondary hover:bg-secondary"
           >
-            <p className="body-text mt-4 text-justify  text-text-muted transition-colors duration-300 group-hover:text-white/90">
+            <p className="body-text mt-2 text-justify  text-text-muted transition-colors duration-300 group-hover:text-white/90">
               Southeast Asia’s cultural and social diversity is a defining
               strength of the region, yet persistent inequality continues to
               hinder inclusive and sustainable development. Marginalized groups
