@@ -36,7 +36,7 @@ export default function Hero() {
     <section className="relative overflow-hidden bg-linear-to-br from-orange-50 via-white to-blue-50">
       {/* decorative soft accent */}
 
-      <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
+      <div className="mx-auto max-w-7xl px-6 py-2 md:py-32">
         <div className="grid items-center gap-14 md:grid-cols-2">
           {/* TEXT LEFT */}
           <motion.div
@@ -82,7 +82,7 @@ export default function Hero() {
               className="mt-10 flex flex-wrap gap-4"
             >
               <a
-                href="https://forms.gle/GBVwewEgqE68BjeN9"
+                href="/"
                 target="_blank"
                 className="rounded-xl bg-secondary px-6 py-3 font-semibold text-white transition hover:bg-accent-hover"
               >

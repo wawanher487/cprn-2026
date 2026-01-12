@@ -66,7 +66,7 @@ export default function About() {
             variants={itemVariants}
             className="group rounded-2xl border border-border bg-background p-8 text-center transition-all duration-300 ease-out hover:-translate-y-2 hover:border-secondary hover:bg-secondary"
           >
-            <p className="body-text mt-4  text-text-muted transition-colors duration-300 group-hover:text-white/90">
+            <p className="body-text mt-4 text-justify  text-text-muted transition-colors duration-300 group-hover:text-white/90">
               Southeast Asia’s cultural and social diversity is a defining
               strength of the region, yet persistent inequality continues to
               hinder inclusive and sustainable development. Marginalized groups
