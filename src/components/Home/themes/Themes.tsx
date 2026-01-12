@@ -74,7 +74,7 @@ export default function Themes() {
                 Prof. Dr. Abdul Mu&apos;ti, M.Ed
               </h3>
               <p className="body-text mt-2 text-text-muted">
-                Indonesia Minister of Primary and Secondary Education (TBC)
+                Indonesia Minister of Primary and Secondary Education
               </p>
             </motion.div>
 
@@ -99,7 +99,7 @@ export default function Themes() {
                 Prof. Dr. Ir. Rachmat Pambudi, M.S.
               </h3>
               <p className="body-text mt-2 text-text-muted">
-                Indonesia Ministry of BAPPENAS RI (TBC)
+                National Development Planning Agency of Republic Indonesia (BAPPENAS)
               </p>
             </motion.div>
 
@@ -150,7 +150,7 @@ export default function Themes() {
                 Prof. Marek Tesar
               </h3>
               <p className="body-text mt-2 text-text-muted">
-                Melbourne University (TBC)
+                Melbourne University
               </p>
             </motion.div>
 

@@ -68,7 +68,7 @@ export default function WhyJoin() {
               transition={{ duration: 0.4 }}
               className="overflow-hidden"
             >
-              <div className="pb-5 text-justify md:pb-6 text-sm md:text-base leading-relaxed">
+              <div className="pb-5 md:pb-6 text-sm md:text-base leading-relaxed">
                 {item.content}
               </div>
             </motion.div>

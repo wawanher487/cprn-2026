@@ -17,7 +17,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "CPRN Summit 2026",
-  description: "Building Bridges to a Sustainable Future",
+  description: "Bridging Research, Policy, and Practice: Pathways toward an Inclusive, Equitable, and Sustainable Futures",
 };
 
 export default function RootLayout({
