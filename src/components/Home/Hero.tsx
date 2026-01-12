@@ -33,7 +33,7 @@ const imageVariants: Variants = {
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-linear-to-br from-orange-50 via-white to-blue-50">
+    <section className="pt-20 md:pt-0 relative overflow-hidden bg-linear-to-br from-orange-50 via-white to-blue-50">
       {/* decorative soft accent */}
 
       <div className="mx-auto max-w-7xl px-6 py-2 md:py-32">
