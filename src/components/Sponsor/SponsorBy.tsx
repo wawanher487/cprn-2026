@@ -34,11 +34,11 @@ export default function SponsorBy() {
         <div className="mt-6 hidden md:grid grid-cols-2">
           {sterringCommittee.map((item) => (
             <motion.div key={item.name} whileHover={{ scale: 1.03 }}>
-              <div className="flex h-28 items-center justify-center hover:grayscale-0 transition">
+              <div className="flex items-center justify-center p-3 hover:grayscale-0 transition">
                 <img
                   src={item.logo}
                   alt={item.name}
-                  className="max-h-full max-w-full object-contain"
+                  className="max-h-14 w-auto object-contain sm:max-h-16 md:max-h-20"
                 />
               </div>
             </motion.div>
@@ -46,8 +46,18 @@ export default function SponsorBy() {
         </div>
 
         {/* Mobile Auto */}
-        <div className="mt-6 md:hidden">
-          <LogoMarquee logos={sterringCommittee} />
+        <div className="mt-4 grid grid-cols-2 md:hidden">
+          {sterringCommittee.map((item) => (
+            <div key={item.name} className="flex justify-center">
+              <div className="flex items-center justify-center p-3">
+                <img
+                  src={item.logo}
+                  alt={item.name}
+                  className="max-h-14 w-auto object-contain"
+                />
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -86,9 +96,19 @@ export default function SponsorBy() {
           </div>
         )}
 
-        {/* Mobile Auto */}
+         {/* Mobile Auto */}
         <div className="mt-6 md:hidden">
-          <LogoMarquee logos={organizers} />
+          {organizers.map((item) => (
+            <div key={item.name} className="flex justify-center">
+              <div className="flex items-center justify-center p-3">
+                <img
+                  src={item.logo}
+                  alt={item.name}
+                  className="max-h-14 w-auto object-contain"
+                />
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -114,9 +134,17 @@ export default function SponsorBy() {
         </div>
 
         {/* Mobile Auto */}
-        <div className="mt-6 md:hidden">
-          <LogoMarquee logos={coOrganizers} />
-        </div>
+          <div className="mt-6 grid grid-cols-3 gap-2 md:hidden">
+          {coOrganizers.map((item) => (
+            <div key={item.name} className="flex justify-center">
+              <img
+                src={item.logo}
+                alt={item.name}
+                className="max-h-12 w-auto object-contain"
+              />
+            </div>
+          ))}
+          </div>
       </div>
     </section>
   );
