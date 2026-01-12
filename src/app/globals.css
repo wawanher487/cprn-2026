@@ -1,5 +1,63 @@
 @import "tailwindcss";
 
+
+
+/* ============================= */
+/* LOCAL FONTS – QUICKSAND       */
+/* ============================= */
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("/fonts/quicksand/QUICKSAND-LIGHT.TTF") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("/fonts/quicksand/QUICKSAND-REGULAR.OTF") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("/fonts/quicksand/QUICKSAND-MEDIUM.TTF") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("/fonts/quicksand/QUICKSAND-SEMIBOLD.TTF") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("/fonts/quicksand/QUICKSAND-BOLD.TTF") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============================= */
+/* LOCAL FONTS – ANDIKA          */
+/* ============================= */
+
+@font-face {
+  font-family: "Andika";
+  src: url("/fonts/andika/AndikaNewBasic-B.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* ============================= */
 /* BASE RESET (WAJIB TAILWIND 4) */
 /* ============================= */
@@ -23,6 +81,7 @@
     font-family: var(--font-body);
   }
 }
+
 
 /* ============================= */
 /* CPRN 2026 DESIGN TOKENS       */
@@ -57,8 +116,8 @@
   --color-border: #cbd5e1;
 
   /* FONT FAMILY */
-  --font-body: var(--font-body);
-  --font-heading: var(--font-heading);
+  --font-heading: "Quicksand", system-ui, sans-serif;
+  --font-body: "Andika", system-ui, sans-serif;
 
   /* TYPOGRAPHY SCALE */
   --text-h1: 2.5rem;
