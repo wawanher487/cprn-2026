@@ -30,8 +30,12 @@ export default function Themes() {
   const [activeTheme, setActiveTheme] = useState<string | null>(null);
 
   return (
-    <section className="relative overflow-hidden bg-linear-to-br from-orange-50 via-white to-blue-50">
-      <div id="themes" className="mx-auto max-w-7xl px-6 py-20">
+    <section className="relative overflow-hidden">
+      {/* aurora background */}
+      <div className="pointer-events-none absolute inset-0 aurora-bg"/>
+
+      {/* content */}
+      <div id="themes" className="relative z-10 mx-auto max-w-7xl px-6 py-20">
         {/* ===================== */}
         {/* KEYNOTE SPEAKERS */}
         {/* ===================== */}
@@ -67,7 +71,7 @@ export default function Themes() {
               </div>
 
               <h3 className="heading-3 mt-6 text-text-primary transition-colors duration-300 group-hover:text-secondary">
-                Prof. Dr. Abdul Mu'ti, M.Ed
+                Prof. Dr. Abdul Mu&apos;ti, M.Ed
               </h3>
               <p className="body-text mt-2 text-text-muted">
                 Indonesia Minister of Primary and Secondary Education (TBC)

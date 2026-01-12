@@ -29,11 +29,11 @@
 /* ============================= */
 
 @theme {
-  /* SECONDARY – Blue */
-  /* --color-secondary: #0776ba; */
+  /* warna aurora cprn */
+  --color-aurora-primary: #0a7a3d;
+  --color-aurora-secondary: #ff7c36;
+  --color-aurora-accent: #1b5fd6;
 
-  /* ACCENT – Orange */
-  /* --color-accent: #ff6600; */
 
   /* PRIMARY – Dark Green */
   --color-primary: #00923f;
@@ -109,4 +109,41 @@
     font-family: var(--font-body);
     font-size: var(--text-small);
   }
+}
+
+
+@keyframes aurora {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.aurora-bg {
+  background-image:
+    radial-gradient(
+      at 20% 30%,
+      color-mix(in srgb, var(--color-aurora-secondary) 60%, transparent),
+      transparent 60%
+    ),
+    radial-gradient(
+      at 80% 20%,
+      color-mix(in srgb, var(--color-aurora-accent) 55%, transparent),
+      transparent 60%
+    ),
+    radial-gradient(
+      at 50% 80%,
+      color-mix(in srgb, var(--color-aurora-primary) 50%, transparent),
+      transparent 65%
+    );
+
+  background-size: 200% 200%;
+  animation: aurora 18s ease-in-out infinite;
+  filter: blur(80px);
+  opacity: 0.55;
 }
