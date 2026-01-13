@@ -1,7 +1,7 @@
 const filters = [
   { label: "Deadline Submissions", target: "deadlines" },
-  // { label: "Summit Fee", target: "summit-fee" },
-  // { label: "Accommodation", target: "accommodation" },
+  { label: "Summit Fee", target: "summit-fee" },
+  { label: "Accommodation", target: "accommodation" },
   { label: "Summit Venue", target: "summit-venue" },
 ];
 

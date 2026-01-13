@@ -33,7 +33,7 @@ export default function Footer() {
             <h4 className="heading-4 text-text-primary">CPRN</h4>
             <ul className="mt-4 space-y-2 text-small text-text-muted">
               <li>
-                <Link href="#about" className="hover:text-background">
+                <Link href="/#about" className="hover:text-background">
                   About CPRN
                 </Link>
               </li>

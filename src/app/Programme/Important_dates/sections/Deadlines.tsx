@@ -1,4 +1,4 @@
-import { deadlines } from "./deadlines";
+import { deadlines } from "./data_deadlines";
 
 export default function Deadlines() {
   return (
