@@ -1,11 +1,15 @@
+import Image from "next/image";
+
 export default function SummitVenue() {
   return (
     <section id="summit-venue" className="scroll-mt-8">
       <h2 className="heading-2 text-secondary mb-10">Summit Venue</h2>
       <div>
-        <img
+        <Image
           src="/venue.jpg"
-          alt="summti venue"
+          alt="summit venue"
+          width={1200}
+          height={600}
           className="w-full object-cover"
         />
       </div>

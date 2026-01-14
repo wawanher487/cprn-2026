@@ -52,7 +52,8 @@ export default function Themes() {
             Keynote Speakers
           </motion.h2>
 
-          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
+          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-1"> 
+            {/* menganti asalnya md:grid-cols-3 */}
             {/* Speaker 1 */}
             <motion.div
               variants={itemVariants}
@@ -79,7 +80,7 @@ export default function Themes() {
             </motion.div>
 
             {/* Speaker 2 */}
-            <motion.div
+            {/* <motion.div
               variants={itemVariants}
               whileHover={{ y: -6 }}
               transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
@@ -101,10 +102,10 @@ export default function Themes() {
               <p className="body-text mt-2 text-text-muted">
                 National Development Planning Agency of Republic Indonesia (BAPPENAS)
               </p>
-            </motion.div>
+            </motion.div> */}
 
             {/* Speaker 3 */}
-            <motion.div
+            {/* <motion.div
               variants={itemVariants}
               whileHover={{ y: -6 }}
               transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
@@ -127,10 +128,10 @@ export default function Themes() {
                 Assistant Secretary for Learning Systems Strand, Department of
                 Education Philippines
               </p>
-            </motion.div>
+            </motion.div> */}
 
             {/* Speaker 4 */}
-            <motion.div
+            {/* <motion.div
               variants={itemVariants}
               whileHover={{ y: -6 }}
               transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
@@ -152,10 +153,10 @@ export default function Themes() {
               <p className="body-text mt-2 text-text-muted">
                 Melbourne University
               </p>
-            </motion.div>
+            </motion.div> */}
 
             {/* Speaker 5 */}
-            <motion.div
+            {/* <motion.div
               variants={itemVariants}
               whileHover={{ y: -6 }}
               transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
@@ -177,7 +178,7 @@ export default function Themes() {
               <p className="body-text mt-2 text-text-muted">
                 Director of SEAMEO Secretariat
               </p>
-            </motion.div>
+            </motion.div> */}
           </div>
         </motion.div>
 

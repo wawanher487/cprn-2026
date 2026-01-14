@@ -100,8 +100,7 @@
 //   );
 // }
 
-import Link from "next/link";
-
+// sementara 
 export default function Presentations() {
   return (
     <section className="bg-background mt-24 mb-15">
