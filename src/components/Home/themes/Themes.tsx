@@ -52,8 +52,7 @@ export default function Themes() {
             Keynote Speakers
           </motion.h2>
 
-          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-1"> 
-            {/* menganti asalnya md:grid-cols-3 */}
+          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3"> 
             {/* Speaker 1 */}
             <motion.div
               variants={itemVariants}
@@ -64,7 +63,7 @@ export default function Themes() {
               <div className="mx-auto w-48 overflow-hidden rounded-2xl">
                 <Image
                   src="/keynote/1.png"
-                  alt="Dr Margarita Pavlova"
+                  alt="Prof. Dr. Abdul Mu'ti, M.Ed"
                   width={300}
                   height={300}
                   className="w-full h-full transition-transform duration-500 ease-out group-hover:scale-105"
@@ -75,12 +74,12 @@ export default function Themes() {
                 Prof. Dr. Abdul Mu&apos;ti, M.Ed
               </h3>
               <p className="body-text mt-2 text-text-muted">
-                Indonesia Minister of Primary and Secondary Education
+                Indonesia Minister of Primary and Secondary Education (TBC)
               </p>
             </motion.div>
 
             {/* Speaker 2 */}
-            {/* <motion.div
+            <motion.div
               variants={itemVariants}
               whileHover={{ y: -6 }}
               transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
@@ -88,8 +87,8 @@ export default function Themes() {
             >
               <div className="mx-auto w-48 overflow-hidden rounded-2xl">
                 <Image
-                  src="/keynote/2.png"
-                  alt="Dr Margarita Pavlova"
+                  src="/keynote/keynote.png"
+                  alt="Prof. Dr. Ir. Rachmat Pambudi, M.S."
                   width={300}
                   height={300}
                   className="w-full h-full transition-transform duration-500 ease-out group-hover:scale-105"
@@ -100,12 +99,12 @@ export default function Themes() {
                 Prof. Dr. Ir. Rachmat Pambudi, M.S.
               </h3>
               <p className="body-text mt-2 text-text-muted">
-                National Development Planning Agency of Republic Indonesia (BAPPENAS)
+                National Development Planning Agency of Republic Indonesia (BAPPENAS) (TBC)
               </p>
-            </motion.div> */}
+            </motion.div>
 
             {/* Speaker 3 */}
-            {/* <motion.div
+            <motion.div
               variants={itemVariants}
               whileHover={{ y: -6 }}
               transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
@@ -113,8 +112,8 @@ export default function Themes() {
             >
               <div className="mx-auto w-48 overflow-hidden rounded-2xl">
                 <Image
-                  src="/keynote/3.png"
-                  alt="Tony McAleavy"
+                  src="/keynote/keynote.png"
+                  alt="Asec. Janir T. Datukan"
                   width={300}
                   height={300}
                   className="w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
@@ -126,12 +125,12 @@ export default function Themes() {
               </h3>
               <p className="body-text mt-2 text-text-muted">
                 Assistant Secretary for Learning Systems Strand, Department of
-                Education Philippines
+                Education Philippines (TBC)
               </p>
-            </motion.div> */}
+            </motion.div>
 
             {/* Speaker 4 */}
-            {/* <motion.div
+            <motion.div
               variants={itemVariants}
               whileHover={{ y: -6 }}
               transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
@@ -139,8 +138,8 @@ export default function Themes() {
             >
               <div className="mx-auto w-48 overflow-hidden rounded-2xl">
                 <Image
-                  src="/keynote/4.png"
-                  alt="Tony McAleavy"
+                  src="/keynote/keynote.png"
+                  alt="Prof. Marek Tesar"
                   width={300}
                   height={300}
                   className="w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
@@ -151,12 +150,12 @@ export default function Themes() {
                 Prof. Marek Tesar
               </h3>
               <p className="body-text mt-2 text-text-muted">
-                Melbourne University
+                Melbourne University (TBC)
               </p>
-            </motion.div> */}
+            </motion.div>
 
             {/* Speaker 5 */}
-            {/* <motion.div
+            <motion.div
               variants={itemVariants}
               whileHover={{ y: -6 }}
               transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
@@ -164,8 +163,8 @@ export default function Themes() {
             >
               <div className="mx-auto w-48 overflow-hidden rounded-2xl">
                 <Image
-                  src="/keynote/5.png"
-                  alt="Tony McAleavy"
+                  src="/keynote/keynote.png"
+                  alt="Datuk Dr. Habibah Abdul Rahim"
                   width={300}
                   height={300}
                   className="w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
@@ -176,9 +175,9 @@ export default function Themes() {
                 Datuk Dr. Habibah Abdul Rahim
               </h3>
               <p className="body-text mt-2 text-text-muted">
-                Director of SEAMEO Secretariat
+                Director of SEAMEO Secretariat (TBC)
               </p>
-            </motion.div> */}
+            </motion.div>
           </div>
         </motion.div>
 
