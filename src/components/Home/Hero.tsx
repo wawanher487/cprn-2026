@@ -46,7 +46,7 @@ export default function Hero() {
           >
             <motion.div
               variants={itemVariants}
-              className="mb-4 inline-flex items-center rounded-full bg-green-50 px-2 py-1 text-sm font-medium text-green-700"
+              className="mb-4 inline-flex items-center rounded-xl bg-secondary px-4 py-2 text-sm font-medium text-background"
             >
               Organized by SEAMEO CECCEP
             </motion.div>
