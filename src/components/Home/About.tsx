@@ -37,6 +37,7 @@ const imageVariants: Variants = {
 
 export default function About() {
   return (
+    
     <section className="relative bg-white py-20">
       <div id="about" className="mx-auto max-w-7xl px-6 py-10">
         <div className="grid items-center gap-16 md:grid-cols-2">
@@ -46,7 +47,7 @@ export default function About() {
           initial="hidden"
           whileInView="show"
           viewport={{once: true}}
-          className="relative">
+          className="relative order-2 md:order-1">
             <Image
               src="/home/about.jpeg"
               alt="CPRN Summit 2026"
@@ -62,18 +63,19 @@ export default function About() {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
+            className="order-1 md:order-2"
             >
               {/* Header  */}
               <motion.p
                 variants={itemVariants}
-                className="text-sm font-semibold uppercase tracking-wide  text-secondary"
+                className="text-xl font-semibold uppercase tracking-wide  text-secondary"
               >
                 About the Summit
               </motion.p>
 
               <motion.h2
                 variants={itemVariants}
-                className="mt-3 text-3xl font-semibold leading-tight text-text-primary md:text-4xl"
+                className="mt-2 text-3xl font-semibold leading-tight text-text-primary md:text-4xl"
               >
                 What is CPRN Summit 2026?
               </motion.h2>

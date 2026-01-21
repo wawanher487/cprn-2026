@@ -56,7 +56,7 @@ export default function Hero() {
               variants={itemVariants}
               className="heading-1 max-w-xl leading-tight text-secondary text-3xl sm:text-4xl lg:text-5xl"
             >
-              SEAMEO Centre Policy Research Network (CPRN) Summit 2026
+              Centre Policy Research Network (CPRN) Summit 2026
             </motion.h1>
 
             {/* Location */}
