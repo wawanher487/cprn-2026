@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
+import Image from "next/image";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -25,67 +26,101 @@ const itemVariants: Variants = {
   },
 };
 
+const imageVariants: Variants = {
+  hidden: { opacity: 0, scale: 0.96 },
+  show: {
+    opacity: 1,
+    scale: 1,
+    transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] },
+  },
+};
+
 export default function About() {
   return (
-    <section className="relative overflow-hidden bg-linear-to-br from-blue-50 via-white to-orange-50 pb-25 pt-20 md:pt-10">
+    <section className="relative bg-white py-20">
       <div id="about" className="mx-auto max-w-7xl px-6 py-10">
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className="mx-auto max-w-3xl text-center"
-        >
-          {/* Subtitle */}
-          <motion.h1
-            variants={itemVariants}
-            className="heading-1 inline-block rounded-full px-4 py-1 text-secondary"
-          >
-            About the Summit
-          </motion.h1>
-
-          {/* Title */}
-          <motion.h2
-            variants={itemVariants}
-            className="heading-2 mt-6 text-text-primary"
-          >
-            What is CPRN Summit 2026?
-          </motion.h2>
-        </motion.div>
-
-        {/* VALUE CARDS */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className="mt-16 grid grid-cols-1"
-        >
-          {/* Card */}
+        <div className="grid items-center gap-16 md:grid-cols-2">
+          {/* Image LEFT */}
           <motion.div
-            variants={itemVariants}
-            className="group rounded-2xl border border-border bg-background p-4 text-center transition-all duration-300 ease-out hover:-translate-y-2 hover:border-secondary hover:bg-secondary"
-          >
-            <p className="body-text mt-2 px-2 text-justify  text-text-muted transition-colors duration-300 group-hover:text-white/90">
-              Southeast Asia’s cultural and social diversity is a defining
-              strength of the region, yet persistent inequality continues to
-              hinder inclusive and sustainable development. Marginalized groups
-              face barriers in accessing quality education and basic support,
-              often shaped by policies that do not fully recognize their lived
-              realities. The CPRN Summit 2026, themed{" "}
-              <span className="font-bold">
-                {" "}
-                “Bridging Research, Policy, and Practice: Pathways toward
-                Inclusive, Equitable, and Sustainable Futures,”
-              </span>{" "}
-              focuses on strengthening genuine partnership and cross-sector
-              collaboration to connect research, policy, and practice. The
-              Summit seeks to generate practical solutions and measurable change
-              toward a more inclusive, equitable, and sustainable Southeast
-              Asia.
-            </p>
+          variants={imageVariants}
+          initial="hidden"
+          whileInView="show"
+          viewport={{once: true}}
+          className="relative">
+            <Image
+              src="/home/about.jpeg"
+              alt="CPRN Summit 2026"
+              width={720}
+              height={720}
+              className="w-full rounded-lg object-cover"
+            />
           </motion.div>
-        </motion.div>
+          
+          {/* konten RIGHT */}
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            >
+              {/* Header  */}
+              <motion.p
+                variants={itemVariants}
+                className="text-sm font-semibold uppercase tracking-wide  text-secondary"
+              >
+                About the Summit
+              </motion.p>
+
+              <motion.h2
+                variants={itemVariants}
+                className="mt-3 text-3xl font-semibold leading-tight text-text-primary md:text-4xl"
+              >
+                What is CPRN Summit 2026?
+              </motion.h2>
+              
+              {/* Accent line */}
+              <div className="mt-4 h-1 w-16 bg-secondary"/>
+
+              {/* Description */}
+              <motion.p
+              variants={itemVariants}
+              className="mt-6 max-w-xl text-justify text-base leading-relaxed text-text-muted"
+              >
+                Southeast Asia’s cultural and social diversity is a defining strength of the region, yet persistent inequality continues to hinder inclusive and sustainable development. Marginalized groups face barriers in accessing quality education and essential services. The CPRN Summit 2026, themed{" "}
+                <span className="font-semibold text-text-primary"> 
+                  “Bridging Research, Policy, and Practice”
+                </span>
+                , seeks to strengthen cross-sector collaboration to generate practical
+                solutions and measurable impact across Southeast Asia.
+              </motion.p>
+
+               {/* HIGHLIGHTS */}
+              <motion.div
+                variants={containerVariants}
+                className="mt-2 grid grid-cols-3 gap-6"
+              >
+                {[
+                  { title: "Research", desc: "Evidence-based insights" },
+                  { title: "Policy", desc: "Informed decision-making" },
+                  { title: "Practice", desc: "Real-world implementation" },
+                ].map((item) => (
+                  <motion.div
+                    key={item.title}
+                    variants={itemVariants}
+                    className="mt-3 py-3 text-center group rounded-2xl border border-border bg-background text-center transition-all duration-300 ease-out hover:-translate-y-2"
+                  >
+                    <div className="mx-auto w-10 rounded-full bg-secondary/10" />
+                    <h4 className="font-semibold text-secondary">
+                      {item.title}
+                    </h4>
+                    <p className="mt-1 text-sm text-text-muted">
+                      {item.desc}
+                    </p>
+                  </motion.div>
+                ))}
+              </motion.div>
+          </motion.div>
+        </div>
       </div>
     </section>
   );
