@@ -119,7 +119,7 @@ export default function SponsorBy() {
         </p>
 
         {/* Desktop */}
-        <div className="mt-6 hidden md:grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="mt-6 hidden md:grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
           {coOrganizers.map((item) => (
             <motion.div key={item.name} whileHover={{ scale: 1.05 }}>
               <div className="flex h-28 items-center justify-center hover:grayscale-0 transition">

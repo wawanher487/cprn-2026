@@ -105,13 +105,20 @@ export default function Hero() {
             animate="show"
             className="relative"
           >
-            <div className="absolute inset-0 rounded-2xl bg-linear-to-tr from-orange-100/40 to-transparent"/>
+            {/* ORANGE GLOSSY OVERLAY */}
+            <div className="absolute inset-0 rounded-2xl
+              bg-linear-to-tr
+              from-secondary/60
+              via-secondary/20
+              to-transparent
+              mix-blend-multiply" />
+
             <Image
               src="/home/home_CPRN2025.jpg"
               alt="CPRN Summit Illustration"
               width={600}
               height={420}
-              className="relative w-full rounded-2xl object-cover shadow-xl"
+              className="relative w-full rounded-2xl object-cover grayscale contrast-110 shadow-xl"
               priority
             />
           </motion.div>

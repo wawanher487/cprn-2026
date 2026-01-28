@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-border bg-secondary/80">
+    <footer className="border-t border-border bg-secondary">
       <div className="mx-auto max-w-7xl px-6 py-14">
         {/* GRID UTAMA */}
         <div className="grid gap-10 md:grid-cols-4">
