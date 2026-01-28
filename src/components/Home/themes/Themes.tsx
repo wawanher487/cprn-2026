@@ -195,7 +195,7 @@ export default function Themes() {
             variants={itemVariants}
             className="heading-2 text-secondary"
           >
-            Summit Sub-Themes
+            Summit Scopes
           </motion.h2>
 
           <div className="mt-12 space-y-16 border-t border-border pt-10">
