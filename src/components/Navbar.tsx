@@ -47,7 +47,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center">
           <div className="border-b-3 border-green-600 py-1 pb-0.5">
             <Image
-              src="/logo_navbar/logo_cprn_2026.png"
+              src="/logo_navbar/logo_cprn.png"
               alt="CPRN 2026 Logo"
               width={175}
               height={85}
