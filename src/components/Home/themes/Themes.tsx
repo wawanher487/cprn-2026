@@ -150,7 +150,7 @@ export default function Themes() {
                 Prof. Marek Tesar
               </h3>
               <p className="body-text mt-2 text-text-muted">
-                Dean, Faculty of Education, Melbourne University (TBC)
+                Dean, Faculty of Education, Melbourne University
               </p>
             </motion.div>
 
