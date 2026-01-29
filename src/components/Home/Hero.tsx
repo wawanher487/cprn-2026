@@ -33,8 +33,7 @@ const imageVariants: Variants = {
 
 export default function Hero() {
   return (
-    <section className="pt-20 md:pt-0 relative overflow-hidden bg-linear-to-br from-orange-50 via-white to-blue-50">
-      {/* decorative soft accent */}
+    <section className="pt-20 md:pt-0 relative overflow-hidden">
 
       <div className="mx-auto max-w-7xl px-6 py-2 md:py-32">
         <div className="grid items-center gap-14 md:grid-cols-2">
@@ -114,11 +113,11 @@ export default function Hero() {
               mix-blend-multiply" />
 
             <Image
-              src="/home/home_CPRN2025.jpg"
+              src="/home/home_1.jpeg"
               alt="CPRN Summit Illustration"
-              width={600}
-              height={420}
-              className="relative w-full rounded-2xl object-cover grayscale contrast-110 shadow-xl"
+              width={1920}
+              height={780}
+              className="relative w-full rounded-2xl object-cover contrast-100 shadow-xl"
               priority
             />
           </motion.div>

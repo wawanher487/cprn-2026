@@ -1,6 +1,62 @@
 @import "tailwindcss";
 
+:root {
+  /* warna */
+  --orange-edge-color: 255, 102, 0;
 
+  /* opacity */
+  --orange-opacity-tl: 1.0;
+  --orange-opacity-tr: 0.65;
+  --orange-opacity-bl: 0.40;
+  --orange-opacity-br: 1.0;
+
+  /* spread */
+  --orange-spread-tl: 13%;
+  --orange-spread-tr: 30%;
+  --orange-spread-bl: 23%;
+  --orange-spread-br: 18%;
+}
+
+
+@media (max-width: 768px) {
+  :root {
+    --orange-opacity-tl: 1.0;
+    --orange-opacity-tr: 0.55;
+    --orange-opacity-bl: 0.20;
+    --orange-opacity-br: 1.0;
+
+    --orange-spread-tl: 13%;
+    --orange-spread-tr: 30%;
+    --orange-spread-bl: 20%;
+    --orange-spread-br: 20%;
+  }
+}
+
+
+/* CPRN ORANGE EDGE GRADIENT */
+.bg-orange-edge {
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(var(--orange-edge-color), var(--orange-opacity-tl)),
+      transparent var(--orange-spread-tl)
+    ),
+    radial-gradient(
+      circle at top right,
+      rgba(var(--orange-edge-color), var(--orange-opacity-tr)),
+      transparent var(--orange-spread-tr)
+    ),
+    radial-gradient(
+      circle at bottom left,
+      rgba(var(--orange-edge-color), var(--orange-opacity-bl)),
+      transparent var(--orange-spread-bl)
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(var(--orange-edge-color), var(--orange-opacity-br)),
+      transparent var(--orange-spread-br)
+    );
+}
 
 /* ============================= */
 /* LOCAL FONTS – QUICKSAND       */
