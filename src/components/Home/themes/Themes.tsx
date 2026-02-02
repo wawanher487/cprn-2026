@@ -62,7 +62,7 @@ export default function Themes() {
             >
               <div className="mx-auto w-48 overflow-hidden rounded-2xl">
                 <Image
-                  src="/keynote/pas.png"
+                  src="/keynote/1.png"
                   alt="Prof. Dr. Abdul Mu'ti, M.Ed"
                   width={300}
                   height={300}
@@ -138,10 +138,10 @@ export default function Themes() {
             >
               <div className="mx-auto w-48 overflow-hidden rounded-2xl">
                 <Image
-                  src="/keynote/pas 2.png"
+                  src="/keynote/4.png"
                   alt="Prof. Marek Tesar"
-                  width={300}
-                  height={300}
+                  width={500}
+                  height={500}
                   className="w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                 />
               </div>
