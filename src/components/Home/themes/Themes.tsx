@@ -62,7 +62,7 @@ export default function Themes() {
             >
               <div className="mx-auto w-48 overflow-hidden rounded-2xl">
                 <Image
-                  src="/keynote/1.png"
+                  src="/keynote/pas.png"
                   alt="Prof. Dr. Abdul Mu'ti, M.Ed"
                   width={300}
                   height={300}
@@ -138,7 +138,7 @@ export default function Themes() {
             >
               <div className="mx-auto w-48 overflow-hidden rounded-2xl">
                 <Image
-                  src="/keynote/4.png"
+                  src="/keynote/pas 2.png"
                   alt="Prof. Marek Tesar"
                   width={300}
                   height={300}

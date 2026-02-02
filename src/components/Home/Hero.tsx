@@ -33,7 +33,15 @@ const imageVariants: Variants = {
 
 export default function Hero() {
   return (
-    <section className="pt-20 md:pt-0 relative overflow-hidden">
+    <section
+      className="pt-20 md:pt-0 relative overflow-hidden bg-orange-edge"
+      style={{
+        '--orange-opacity-bl': 0,
+        '--orange-opacity-br': 0,
+        '--orange-spread-bl': '0%',
+        '--orange-spread-br': '0%',
+      } as React.CSSProperties}
+    >
 
       <div className="mx-auto max-w-7xl px-6 py-2 md:py-32">
         <div className="grid items-center gap-14 md:grid-cols-2">

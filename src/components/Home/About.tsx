@@ -37,8 +37,14 @@ const imageVariants: Variants = {
 
 export default function About() {
   return (
-    
-    <section className="relative bg-white py-20">
+    <section className="relative bg-white py-20 bg-orange-edge"
+      style={{
+        '--orange-opacity-tl': 0,
+        '--orange-opacity-tr': 0,
+        '--orange-spread-tl': '0%',
+        '--orange-spread-tr': '0%',
+      } as React.CSSProperties}
+    >
       <div id="about" className="mx-auto max-w-7xl px-6 py-10">
         <div className="grid items-center gap-16 md:grid-cols-2">
           {/* Image LEFT */}
