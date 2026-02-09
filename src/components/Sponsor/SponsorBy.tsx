@@ -14,14 +14,14 @@ export default function SponsorBy() {
   ];
 
   const coOrganizers = [
-    { name: "SEAMEO BIOTROP", logo: "/logos/biotrop.png" },
+    { name: "UPI", logo: "/logos/pasca_UPI.png" },
     { name: "SEAMEO QITEP Language", logo: "/logos/qitep-language.png" },
     { name: "SEAMEO QITEP Math", logo: "/logos/qitep-math.png" },
     { name: "SEAMEO QITEP Science", logo: "/logos/qitep-science.png" },
+    { name: "The Conversition Indonesia", logo: "/logos/the_conversition_indonesia.png" },
     { name: "SEAMEO RECFON", logo: "/logos/recfon.png" },
     { name: "SEAMEO SEAMOLEC", logo: "/logos/seamolec.jpg" },
-    { name: "UPI", logo: "/logos/pasca_UPI.png" },
-    { name: "The Conversition Indonesia", logo: "/logos/the_conversition_indonesia.png" },
+    { name: "SEAMEO BIOTROP", logo: "/logos/biotrop.png" },
   ];
 
   return (

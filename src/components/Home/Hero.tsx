@@ -43,7 +43,7 @@ export default function Hero() {
       } as React.CSSProperties}
     >
 
-      <div className="mx-auto max-w-7xl px-6 py-2 md:py-32">
+      <div className="mx-auto max-w-7xl px-6 py-6 mt-10 md:py-32">
         <div className="grid items-center gap-14 md:grid-cols-2">
           {/* TEXT LEFT */}
           <motion.div
