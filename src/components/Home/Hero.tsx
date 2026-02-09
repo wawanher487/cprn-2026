@@ -89,7 +89,7 @@ export default function Hero() {
               className="mt-10 flex flex-wrap gap-4"
             >
               <a
-                href="/"
+                href="https://interconf.org/2026/cprn/kfz/"
                 target="_blank"
                 className="rounded-xl bg-secondary px-6 py-3 font-semibold text-white transition hover:bg-accent-hover"
               >

@@ -157,7 +157,7 @@ export default function Navbar() {
 
           <li>
             <Link 
-            href="/" 
+            href="https://interconf.org/2026/cprn/kfz/" 
             target="_blank"
             className="rounded-xl bg-secondary px-3 py-2 font-semibold text-white transition hover:bg-accent-hover"
             >Login</Link>
@@ -185,7 +185,7 @@ export default function Navbar() {
           <ul className="flex flex-col px-6 py-4 space-y-4 text-text-primary font-medium">
             <li>
               <Link 
-              href="/" 
+              href="https://interconf.org/2026/cprn/kfz/" 
               target="_blank"
               >Login</Link>
             </li>
