@@ -51,11 +51,11 @@ export default function SponsorBy() {
         <div className="mt-4 grid grid-cols-2 md:hidden">
           {sterringCommittee.map((item) => (
             <div key={item.name} className="flex justify-center">
-              <div className="flex items-center justify-center p-3">
+              <div className="flex h-28 w-full items-center justify-center p-3">
                 <img
                   src={item.logo}
                   alt={item.name}
-                  className="max-h-14 w-auto object-contain"
+                  className="max-h-full max-w-full object-contain"
                 />
               </div>
             </div>
@@ -73,7 +73,7 @@ export default function SponsorBy() {
         {organizers.length === 1 ? (
           <div className="mt-6 hidden md:flex justify-center">
             <motion.div whileHover={{ scale: 1.03 }}>
-              <div className="flex h-28 w-64 items-center justify-center hover:grayscale-0 transition">
+              <div className="flex h-28 w-full items-center justify-center hover:grayscale-0 transition">
                 <img
                   src={organizers[0].logo}
                   alt={organizers[0].name}
@@ -102,11 +102,11 @@ export default function SponsorBy() {
         <div className="mt-6 md:hidden">
           {organizers.map((item) => (
             <div key={item.name} className="flex justify-center">
-              <div className="flex items-center justify-center p-3">
+              <div className="flex h-28 w-full items-center justify-center p-4">
                 <img
                   src={item.logo}
                   alt={item.name}
-                  className="max-h-14 w-auto object-contain"
+                  className="max-h-full max-w-full object-contain"
                 />
               </div>
             </div>
@@ -138,7 +138,7 @@ export default function SponsorBy() {
         {/* Mobile Auto */}
           <div className="mt-6 grid grid-cols-2 gap-2 md:hidden">
           {coOrganizers.map((item) => (
-            <div key={item.name} className="flex h-28 w-full items-center justify-center rounded-lg bg-white p-4">
+            <div key={item.name} className="flex h-28 w-full items-center justify-center p-4">
               <img
                 src={item.logo}
                 alt={item.name}
