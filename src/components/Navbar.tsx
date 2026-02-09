@@ -154,6 +154,14 @@ export default function Navbar() {
               </Link> */}
             </div>
           </li>
+
+          <li>
+            <Link 
+            href="/" 
+            target="_blank"
+            className="rounded-xl bg-secondary px-3 py-2 font-semibold text-white transition hover:bg-accent-hover"
+            >Login</Link>
+          </li>
         </ul>
 
         {/* HAMBURGER */}
@@ -175,6 +183,12 @@ export default function Navbar() {
           }`}
         >
           <ul className="flex flex-col px-6 py-4 space-y-4 text-text-primary font-medium">
+            <li>
+              <Link 
+              href="/" 
+              target="_blank"
+              >Login</Link>
+            </li>
             <li>
               <Link href="/" onClick={() => setMenuOpen(false)}>
                 Home

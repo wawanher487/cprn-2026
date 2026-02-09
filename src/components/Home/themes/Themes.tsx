@@ -99,7 +99,7 @@ export default function Themes() {
                 Prof. Stella Christie, Ph.D.
               </h3>
               <p className="body-text mt-2 text-text-muted">
-                Wakil Pendidikan Tinggi, Sains, dan Teknologi (Wamendiktisaintek)
+                Deputy Minister Of Higher Education, Science, and Technology for the Republic of Indonesia (TBC)
               </p>
             </motion.div>
 
