@@ -15,10 +15,10 @@ export default function SponsorBy() {
 
   const coOrganizers = [
     { name: "UPI", logo: "/logos/pasca_UPI.png" },
+    { name: "The Conversition Indonesia", logo: "/logos/the_conversition_indonesia.png" },
     { name: "SEAMEO QITEP Language", logo: "/logos/qitep-language.png" },
     { name: "SEAMEO QITEP Math", logo: "/logos/qitep-math.png" },
     { name: "SEAMEO QITEP Science", logo: "/logos/qitep-science.png" },
-    { name: "The Conversition Indonesia", logo: "/logos/the_conversition_indonesia.png" },
     { name: "SEAMEO RECFON", logo: "/logos/recfon.png" },
     { name: "SEAMEO SEAMOLEC", logo: "/logos/seamolec.jpg" },
     { name: "SEAMEO BIOTROP", logo: "/logos/biotrop.png" },
@@ -136,13 +136,13 @@ export default function SponsorBy() {
         </div>
 
         {/* Mobile Auto */}
-          <div className="mt-6 grid grid-cols-3 gap-2 md:hidden">
+          <div className="mt-6 grid grid-cols-2 gap-2 md:hidden">
           {coOrganizers.map((item) => (
-            <div key={item.name} className="flex justify-center">
+            <div key={item.name} className="flex h-28 w-full items-center justify-center rounded-lg bg-white p-4">
               <img
                 src={item.logo}
                 alt={item.name}
-                className="max-h-12 w-auto object-contain"
+                className="max-h-full max-w-full object-contain"
               />
             </div>
           ))}
