@@ -74,7 +74,7 @@ export default function Themes() {
                 Prof. Dr. Abdul Mu&apos;ti, M.Ed
               </h3>
               <p className="body-text mt-2 text-text-muted">
-                Indonesia Minister of Primary and Secondary Education (TBC)
+                Indonesia Minister of Primary and Secondary Education 
               </p>
             </motion.div>
 
@@ -96,7 +96,7 @@ export default function Themes() {
               </div>
 
               <h3 className="heading-3 mt-6 text-text-primary transition-colors duration-300 group-hover:text-secondary">
-                Prof. Stella Christie, Ph.D.
+                Prof. Stella Christie, Ph.D*
               </h3>
               <p className="body-text mt-2 text-text-muted">
                 Deputy Minister Of Higher Education, Science, and Technology for the Republic of Indonesia (TBC)
@@ -121,7 +121,7 @@ export default function Themes() {
               </div>
 
               <h3 className="heading-3 mt-6 text-text-primary transition-colors duration-300 group-hover:text-secondary">
-                Asec. Janir T. Datukan
+                Asec. Janir T. Datukan*
               </h3>
               <p className="body-text mt-2 text-text-muted">
                 Assistant Secretary for Learning Systems Strand, Department of
