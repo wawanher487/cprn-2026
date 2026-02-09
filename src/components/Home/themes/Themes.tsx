@@ -138,7 +138,7 @@ export default function Themes() {
             >
               <div className="mx-auto w-48 overflow-hidden rounded-2xl">
                 <Image
-                  src="/keynote/4.png"
+                  src="/keynote/Keynote-marek.png"
                   alt="Prof. Marek Tesar"
                   width={500}
                   height={500}
@@ -172,10 +172,10 @@ export default function Themes() {
               </div>
 
               <h3 className="heading-3 mt-6 text-text-primary transition-colors duration-300 group-hover:text-secondary">
-                Datuk Dr. Habibah Abdul Rahim
+                To Be Decided (TBD)
               </h3>
               <p className="body-text mt-2 text-text-muted">
-                Director of SEAMEO Secretariat (TBC)
+                To Be Decided (TBD)
               </p>
             </motion.div>
           </div>
