@@ -88,7 +88,7 @@ export default function Themes() {
               <div className="mx-auto w-48 overflow-hidden rounded-2xl">
                 <Image
                   src="/keynote/keynote.png"
-                  alt="Prof. Dr. Ir. Rachmat Pambudi, M.S."
+                  alt="Prof. Stella Christie, Ph.D."
                   width={300}
                   height={300}
                   className="w-full h-full transition-transform duration-500 ease-out group-hover:scale-105"
@@ -96,10 +96,10 @@ export default function Themes() {
               </div>
 
               <h3 className="heading-3 mt-6 text-text-primary transition-colors duration-300 group-hover:text-secondary">
-                Prof. Dr. Ir. Rachmat Pambudi, M.S.
+                Prof. Stella Christie, Ph.D.
               </h3>
               <p className="body-text mt-2 text-text-muted">
-                National Development Planning Agency of Republic Indonesia (BAPPENAS) (TBC)
+                Wakil Pendidikan Tinggi, Sains, dan Teknologi (Wamendiktisaintek)
               </p>
             </motion.div>
 

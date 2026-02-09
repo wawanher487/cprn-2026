@@ -115,7 +115,7 @@ export default function SponsorBy() {
       {/* CO-ORGANIZERS */}
       <div className="mx-auto max-w-3xl px-4">
         <p className="text-small text-center uppercase tracking-widest text-text-muted">
-          Co-Organizing by
+          Co-Organized by
         </p>
 
         {/* Desktop */}
