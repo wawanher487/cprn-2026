@@ -62,7 +62,7 @@ export default function Themes() {
             >
               <div className="mx-auto w-48 overflow-hidden rounded-2xl">
                 <Image
-                  src="/keynote/1.png"
+                  src="/keynote/speakers_cprn-01.png"
                   alt="Prof. Dr. Abdul Mu'ti, M.Ed"
                   width={300}
                   height={300}
@@ -87,7 +87,7 @@ export default function Themes() {
             >
               <div className="mx-auto w-48 overflow-hidden rounded-2xl">
                 <Image
-                  src="/keynote/keynote-stella.png"
+                  src="/keynote/speakers_cprn-02.png"
                   alt="Prof. Stella Christie, Ph.D."
                   width={300}
                   height={300}
@@ -112,7 +112,7 @@ export default function Themes() {
             >
               <div className="mx-auto w-48 overflow-hidden rounded-2xl">
                 <Image
-                  src="/keynote/Janir.png"
+                  src="/keynote/speakers_cprn-03.png"
                   alt="Asec. Janir T. Datukan"
                   width={300}
                   height={300}
@@ -138,7 +138,7 @@ export default function Themes() {
             >
               <div className="mx-auto w-48 overflow-hidden rounded-2xl">
                 <Image
-                  src="/keynote/Keynote-marek.png"
+                  src="/keynote/speakers_cprn-04.png"
                   alt="Prof. Marek Tesar"
                   width={500}
                   height={500}
