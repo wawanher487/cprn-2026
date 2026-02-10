@@ -112,7 +112,7 @@ export default function Themes() {
             >
               <div className="mx-auto w-48 overflow-hidden rounded-2xl">
                 <Image
-                  src="/keynote/speakers_cprn-03.png"
+                  src="/keynote/speakers_cprn-04.png"
                   alt="Asec. Janir T. Datukan"
                   width={300}
                   height={300}
@@ -138,7 +138,7 @@ export default function Themes() {
             >
               <div className="mx-auto w-48 overflow-hidden rounded-2xl">
                 <Image
-                  src="/keynote/speakers_cprn-04.png"
+                  src="/keynote/speakers_cprn-03.png"
                   alt="Prof. Marek Tesar"
                   width={500}
                   height={500}
