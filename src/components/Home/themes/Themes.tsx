@@ -138,7 +138,7 @@ export default function Themes() {
             >
               <div className="mx-auto w-48 overflow-hidden rounded-2xl">
                 <Image
-                  src="/keynote/speakers_cprn-03.png"
+                  src="/keynote/speakers_cprn_c.png"
                   alt="Prof. Marek Tesar"
                   width={500}
                   height={500}
