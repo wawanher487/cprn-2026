@@ -87,31 +87,6 @@ export default function Themes() {
             >
               <div className="mx-auto w-48 overflow-hidden rounded-2xl">
                 <Image
-                  src="/keynote/keynote.png"
-                  alt="Prof. Stella Christie, Ph.D."
-                  width={300}
-                  height={300}
-                  className="w-full h-full transition-transform duration-500 ease-out group-hover:scale-105"
-                />
-              </div>
-
-              <h3 className="heading-3 mt-6 text-text-primary transition-colors duration-300 group-hover:text-secondary">
-                Prof. Stella Christie, Ph.D*
-              </h3>
-              <p className="body-text mt-2 text-text-muted">
-                Deputy Minister Of Higher Education, Science, and Technology for the Republic of Indonesia (TBC)
-              </p>
-            </motion.div>
-
-            {/* Speaker 3 */}
-            <motion.div
-              variants={itemVariants}
-              whileHover={{ y: -6 }}
-              transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-              className="group text-center"
-            >
-              <div className="mx-auto w-48 overflow-hidden rounded-2xl">
-                <Image
                   src="/keynote/speakers_cprn-04.png"
                   alt="Asec. Janir T. Datukan"
                   width={300}
@@ -129,7 +104,7 @@ export default function Themes() {
               </p>
             </motion.div>
 
-            {/* Speaker 4 */}
+            {/* Speaker 3 */}
             <motion.div
               variants={itemVariants}
               whileHover={{ y: -6 }}
@@ -151,6 +126,31 @@ export default function Themes() {
               </h3>
               <p className="body-text mt-2 text-text-muted">
                 Dean, Faculty of Education, Melbourne University
+              </p>
+            </motion.div>
+
+            {/* Speaker 4 */}
+            <motion.div
+              variants={itemVariants}
+              whileHover={{ y: -6 }}
+              transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+              className="group text-center"
+            >
+              <div className="mx-auto w-48 overflow-hidden rounded-2xl">
+                <Image
+                  src="/keynote/keynote.png"
+                  alt="Prof. Stella Christie, Ph.D."
+                  width={300}
+                  height={300}
+                  className="w-full h-full transition-transform duration-500 ease-out group-hover:scale-105"
+                />
+              </div>
+
+              <h3 className="heading-3 mt-6 text-text-primary transition-colors duration-300 group-hover:text-secondary">
+                Prof. Stella Christie, Ph.D*
+              </h3>
+              <p className="body-text mt-2 text-text-muted">
+                Deputy Minister Of Higher Education, Science, and Technology for the Republic of Indonesia (TBC)
               </p>
             </motion.div>
 
