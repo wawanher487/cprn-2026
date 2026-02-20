@@ -2,13 +2,14 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import VisitorFlags from "./Visitor/VisitorFlag";
 
 export default function Footer() {
   return (
     <footer className="border-t border-border bg-secondary">
       <div className="mx-auto max-w-7xl px-6 py-14">
         {/* GRID UTAMA */}
-        <div className="grid gap-10 md:grid-cols-4">
+        <div className="grid gap-10 md:grid-cols-5">
           {/* ===== BRANDING ===== */}
           <div>
             <div className="flex items-center gap-4">
@@ -90,6 +91,9 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+
+          {/* visitor country stats */}
+          <VisitorFlags />
         </div>
       </div>
     </footer>

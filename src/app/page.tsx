@@ -5,6 +5,7 @@ import Themes from "@/components/Home/themes/Themes";
 import WhyJoin from "@/components/Home/WhyJoin";
 import SponsorBy from "@/components/Sponsor/SponsorBy";
 import Footer from "@/components/Footer";
+import VisitorTracker from "@/components/Visitor/VisitorTracker";
 // import Testimonials from "@/components/Home/Testimonials";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
         {/* <Testimonials/> */}
         <SponsorBy />
       </main>
+      <VisitorTracker />
       <Footer />
     </>
   );
