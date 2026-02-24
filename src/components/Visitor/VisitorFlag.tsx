@@ -57,7 +57,18 @@ export default function VisitorFlags() {
     return (
         <div className="w-56 border rounded-md bg-white p-3 text-xs">
         {/* Header */}
-        <div className="font-semibold mb-1">Visitors</div>
+        <div className="grid grid-cols-2">
+            <div className="font-semibold mb-1">Visitors</div>
+            <div>
+                {/* <Link
+                href="/analytics"
+                target="_blank"
+                className="text-xs underline inline-block"
+            >
+                Detailed analytics
+            </Link> */}
+            </div>
+        </div>
 
         {/* Total */}
         <div className="text-gray-600 mb-2">

@@ -3,6 +3,7 @@ export const runtime = "nodejs";
 import { NextRequest, NextResponse } from "next/server";
 import { connectMongo } from "@/lib/mongodb";
 import VisitorCountry from "@/models/VisitorCountry";
+import VisitorLog from "@/models/VisitorLog";
 
 export async function GET(req: NextRequest) {
     await connectMongo();
@@ -42,6 +43,13 @@ export async function GET(req: NextRequest) {
         },
         { upsert: true }
     );
+
+    await VisitorLog.create({
+        ip,
+        countryCode: data.countryCode,
+        countryName: data.country,
+        visitedAt: new Date(),
+    });
 
     return NextResponse.json({
         ip,
