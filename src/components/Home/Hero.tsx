@@ -96,7 +96,7 @@ export default function Hero() {
               </a>
 
               <Link
-                href="/Programme/Important_dates"
+                href="/programme/important-dates"
                 className="rounded-xl border border-secondary px-6 py-3 font-semibold text-secondary transition hover:bg-accent-hover hover:text-white"
               >
                 View Programme

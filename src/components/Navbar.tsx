@@ -71,25 +71,25 @@ export default function Navbar() {
             <span className="cursor-pointer">Programme ▾</span>
             <div className="absolute left-0 top-full mt-3 w-44 rounded-xl border border-border bg-white shadow-lg opacity-0 invisible transition-all group-hover:opacity-100 group-hover:visible">
               <Link
-                href="/Programme/Brief_programme"
+                href="/programme/brief-programme"
                 className="block px-4 py-2 hover:bg-surface"
               >
                 Brief Programme
               </Link>
               <Link
-                href="/Programme/Event_programmes"
+                href="/programme/event-programmes"
                 className="block px-4 py-2 hover:bg-surface"
               >
                 Event Programmes
               </Link>
               <Link
-                href="/Programme/Important_dates"
+                href="/programme/important-dates"
                 className="block px-4 py-2 hover:bg-surface"
               >
                 Important Dates
               </Link>
               <Link
-                href="/Programme/Important_dates#summit-fee"
+                href="/programme/important-dates#summit-fee"
                 className="block px-4 py-2 hover:bg-surface"
               >
                 Summit Fees
@@ -105,13 +105,13 @@ export default function Navbar() {
             <span className="cursor-pointer">Venue ▾</span>
             <div className="absolute left-0 top-full mt-3 w-44 rounded-xl border border-border bg-white shadow-lg opacity-0 invisible transition-all group-hover:opacity-100 group-hover:visible">
               <Link
-                href="/Programme/Important_dates#summit-venue"
+                href="/programme/important-dates#summit-venue"
                 className="block px-4 py-2 hover:bg-surface"
               >
                 Venue Information
               </Link>
               <Link
-                href="/Programme/Important_dates#accommodation"
+                href="/programme/important-dates#accommodation"
                 className="block px-4 py-2 hover:bg-surface"
               >
                 Accommodation
@@ -220,22 +220,22 @@ export default function Navbar() {
               >
                 <ul className="ml-4 mt-2 space-y-2 text-small text-text-primary">
                   <li>
-                    <Link href="/Programme/Brief_programme">
+                    <Link href="/programme/brief-programme">
                       Brief Programme
                     </Link>
                   </li>
                   <li>
-                    <Link href="/Programme/Event_programmes">
+                    <Link href="/programme/event-programmes">
                       Event Programmes
                     </Link>
                   </li>
                   <li>
-                    <Link href="/Programme/Important_dates">
+                    <Link href="/programme/important-dates">
                       Important Dates
                     </Link>
                   </li>
                   <li>
-                    <Link href="/Programme/Important_dates#summit-fee">
+                    <Link href="/programme/important-dates#summit-fee">
                       Summit Fees
                     </Link>
                   </li>
@@ -268,12 +268,12 @@ export default function Navbar() {
               >
                 <ul className="ml-4 mt-2 space-y-2 text-small text-text-primary">
                   <li>
-                    <Link href="/Programme/Important_dates#summit-venue">
+                    <Link href="/programme/important-dates#summit-venue">
                       Venue Information
                     </Link>
                   </li>
                   <li>
-                    <Link href="/Programme/Important_dates#accommodation">
+                    <Link href="/programme/important-dates#accommodation">
                       Accommodation
                     </Link>
                   </li>
