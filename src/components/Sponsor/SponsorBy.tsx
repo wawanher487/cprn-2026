@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 // import { LogoMarquee } from "./LogoMarquee";
 
 export default function SponsorBy() {
@@ -37,9 +38,11 @@ export default function SponsorBy() {
           {sterringCommittee.map((item) => (
             <motion.div key={item.name} whileHover={{ scale: 1.03 }}>
               <div className="flex items-center justify-center p-3 hover:grayscale-0 transition">
-                <img
+                <Image
                   src={item.logo}
                   alt={item.name}
+                  width={80}
+                  height={80}
                   className="max-h-14 w-auto object-contain sm:max-h-16 md:max-h-20"
                 />
               </div>
@@ -52,9 +55,11 @@ export default function SponsorBy() {
           {sterringCommittee.map((item) => (
             <div key={item.name} className="flex justify-center">
               <div className="flex h-28 w-full items-center justify-center p-3">
-                <img
+                <Image
                   src={item.logo}
                   alt={item.name}
+                  width={112}
+                  height={112}
                   className="max-h-full max-w-full object-contain"
                 />
               </div>
@@ -74,9 +79,11 @@ export default function SponsorBy() {
           <div className="mt-6 hidden md:flex justify-center">
             <motion.div whileHover={{ scale: 1.03 }}>
               <div className="flex h-28 w-full items-center justify-center hover:grayscale-0 transition">
-                <img
+                <Image
                   src={organizers[0].logo}
                   alt={organizers[0].name}
+                  width={112}
+                  height={112}
                   className="max-h-full max-w-full object-contain"
                 />
               </div>
@@ -87,9 +94,11 @@ export default function SponsorBy() {
             {organizers.map((item) => (
               <motion.div key={item.name} whileHover={{ scale: 1.03 }}>
                 <div className="flex h-28 items-center justify-center hover:grayscale-0 transition">
-                  <img
+                  <Image
                     src={item.logo}
                     alt={item.name}
+                    width={112}
+                    height={112}
                     className="max-h-full max-w-full object-contain"
                   />
                 </div>
@@ -103,9 +112,11 @@ export default function SponsorBy() {
           {organizers.map((item) => (
             <div key={item.name} className="flex justify-center">
               <div className="flex h-28 w-full items-center justify-center p-4">
-                <img
+                <Image
                   src={item.logo}
                   alt={item.name}
+                  width={112}
+                  height={112}
                   className="max-h-full max-w-full object-contain"
                 />
               </div>
@@ -125,9 +136,11 @@ export default function SponsorBy() {
           {coOrganizers.map((item) => (
             <motion.div key={item.name} whileHover={{ scale: 1.05 }}>
               <div className="flex h-28 items-center justify-center hover:grayscale-0 transition">
-                <img
+                <Image
                   src={item.logo}
                   alt={item.name}
+                  width={112}
+                  height={112}
                   className="max-h-full max-w-full object-contain"
                 />
               </div>
@@ -139,9 +152,11 @@ export default function SponsorBy() {
           <div className="mt-6 grid grid-cols-2 gap-2 md:hidden">
           {coOrganizers.map((item) => (
             <div key={item.name} className="flex h-28 w-full items-center justify-center p-4">
-              <img
+              <Image
                 src={item.logo}
                 alt={item.name}
+                width={112}
+                height={112}
                 className="max-h-full max-w-full object-contain"
               />
             </div>

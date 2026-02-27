@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 interface Logo {
   name: string;
@@ -22,15 +23,17 @@ export function LogoMarquee({ logos }: { logos: Logo[] }) {
   if (logos.length === 1) {
     return (
       <div className="flex justify-center py-4">
-        <img
+        <Image
           src={logos[0].logo}
           alt={logos[0].name}
+          width={48}
+          height={48}
           className="max-h-12 object-contain"
         />
       </div>
     );
   }
-  return (
+  return (    
     <div className="relative overflow-hidden">
       <motion.div
         ref={containerRef}
@@ -47,9 +50,11 @@ export function LogoMarquee({ logos }: { logos: Logo[] }) {
             key={`${item.name}-${index}`}
             className="flex min-w-30 items-center justify-center"
           >
-            <img
+            <Image
               src={item.logo}
               alt={item.name}
+              width={48}
+              height={48}
               className="max-h-12 object-contain"
             />
           </div>

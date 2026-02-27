@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "CPRN Summit 2026",
+  title: "CPRN 2026 | International Conference by SEAMEO CECCEP",
   description:
-    "Bridging Research, Policy, and Practice: Pathways toward an Inclusive, Equitable, and Sustainable Futures",
+    "Official website of CPRN 2026, an international conference organized by SEAMEO CECCEP. Find call for papers, submission guidelines, and important dates.",
 };
 
 export default function RootLayout({
