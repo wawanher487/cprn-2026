@@ -183,9 +183,15 @@ export default function BriefProgramme() {
   return (
     <section className="mt-24 mb-16">
       {/* ================= HERO ================= */}
-      <div className="relative mx-3 overflow-hidden rounded-2xl bg-secondary">
-        <div className="relative py-20 text-center">
+        <div className="relative mx-3 overflow-hidden rounded-2xl bg-secondary">
+          <div className="bg-secondary mx-3 rounded-2xl py-16 text-center">
+          <span className="inline-block px-4 py-1 bg-white text-secondary rounded-full font-medium mb-4">
+            CPRN 2026
+          </span>
           <h1 className="heading-1 text-white">Brief Programme</h1>
+          <p className="body-text text-white mt-2">
+            Brief Programme details will be available soon
+          </p>
         </div>
       </div>
 
@@ -196,7 +202,7 @@ export default function BriefProgramme() {
             onClick={() => setOpenDay(openDay === 1 ? null : 1)}
             className="flex w-full items-center justify-between px-6 py-5 text-left"
           >
-            <h3 className="font-semibold text-secondary">ANNOUNCEMENT</h3>
+            <h2 className="font-semibold text-secondary">ANNOUNCEMENT</h2>
             <span className="text-xl text-secondary">
               {openDay === 1 ? "−" : "+"}
             </span>
@@ -212,7 +218,7 @@ export default function BriefProgramme() {
             className="overflow-hidden"
           >
             <div className="px-6 pb-6">
-              <div className="rounded-xl bg-gray-50 p-5 text-sm text-text-muted">
+              <div className="rounded-xl bg-gray-50 p-2 text-sm text-text-muted">
                 <p>
                   The detailed schedule is currently finalized to ensure high
                   quality experience.

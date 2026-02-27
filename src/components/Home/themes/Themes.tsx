@@ -30,7 +30,8 @@ export default function Themes() {
   const [activeTheme, setActiveTheme] = useState<string | null>(null);
 
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden"  aria-labelledby="themes-heading">
+      
       {/* aurora background */}
       <div className="pointer-events-none absolute inset-0 aurora-bg"/>
 
@@ -46,10 +47,11 @@ export default function Themes() {
           viewport={{ once: true }}
         >
           <motion.h2
+            id="themes-heading"
             variants={itemVariants}
             className="heading-2 items-center text-secondary"
           >
-            Keynote Speakers
+            CPRN 2026 Keynote Speakers
           </motion.h2>
 
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3"> 
@@ -63,7 +65,7 @@ export default function Themes() {
               <div className="mx-auto w-48 overflow-hidden rounded-2xl">
                 <Image
                   src="/keynote/speakers_cprn-01.png"
-                  alt="Prof. Dr. Abdul Mu'ti, M.Ed"
+                  alt="Prof. Dr. Abdul Mu'ti, keynote speaker at CPRN 2026"
                   width={300}
                   height={300}
                   className="w-full h-full transition-transform duration-500 ease-out group-hover:scale-105"
@@ -87,8 +89,33 @@ export default function Themes() {
             >
               <div className="mx-auto w-48 overflow-hidden rounded-2xl">
                 <Image
+                  src="/keynote/speakers_cprn_c.png"
+                  alt="Prof. Marek Tesar, keynote speaker at CPRN 2026"
+                  width={500}
+                  height={500}
+                  className="w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+                />
+              </div>
+
+              <h3 className="heading-3 mt-6 text-text-primary transition-colors duration-300 group-hover:text-secondary">
+                Prof. Marek Tesar
+              </h3>
+              <p className="body-text mt-2 text-text-muted">
+                Dean, Faculty of Education, Melbourne University
+              </p>
+            </motion.div>
+
+            {/* Speaker 3 */}
+            <motion.div
+              variants={itemVariants}
+              whileHover={{ y: -6 }}
+              transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+              className="group text-center"
+            >
+              <div className="mx-auto w-48 overflow-hidden rounded-2xl">
+                <Image
                   src="/keynote/speakers_cprn-04.png"
-                  alt="Asec. Janir T. Datukan"
+                  alt="Asec. Janir T. Datukan, keynote speaker at CPRN 2026"
                   width={300}
                   height={300}
                   className="w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
@@ -104,31 +131,6 @@ export default function Themes() {
               </p>
             </motion.div>
 
-            {/* Speaker 3 */}
-            <motion.div
-              variants={itemVariants}
-              whileHover={{ y: -6 }}
-              transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-              className="group text-center"
-            >
-              <div className="mx-auto w-48 overflow-hidden rounded-2xl">
-                <Image
-                  src="/keynote/speakers_cprn_c.png"
-                  alt="Prof. Marek Tesar"
-                  width={500}
-                  height={500}
-                  className="w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
-                />
-              </div>
-
-              <h3 className="heading-3 mt-6 text-text-primary transition-colors duration-300 group-hover:text-secondary">
-                Prof. Marek Tesar
-              </h3>
-              <p className="body-text mt-2 text-text-muted">
-                Dean, Faculty of Education, Melbourne University
-              </p>
-            </motion.div>
-
             {/* Speaker 4 */}
             <motion.div
               variants={itemVariants}
@@ -139,7 +141,7 @@ export default function Themes() {
               <div className="mx-auto w-48 overflow-hidden rounded-2xl">
                 <Image
                   src="/keynote/keynote.png"
-                  alt="Prof. Stella Christie, Ph.D."
+                  alt="Prof. Stella Christie, Ph.D., keynote speaker at CPRN 2026"
                   width={300}
                   height={300}
                   className="w-full h-full transition-transform duration-500 ease-out group-hover:scale-105"
@@ -164,7 +166,7 @@ export default function Themes() {
               <div className="mx-auto w-48 overflow-hidden rounded-2xl">
                 <Image
                   src="/keynote/keynote.png"
-                  alt="Datuk Dr. Habibah Abdul Rahim"
+                  alt="Datuk Dr. Habibah Abdul Rahim, keynote speaker at CPRN 2026"
                   width={300}
                   height={300}
                   className="w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
@@ -198,7 +200,7 @@ export default function Themes() {
             Summit Scopes
           </motion.h2>
 
-          <div className="mt-12 space-y-16 border-t border-border pt-10">
+          <div className=" space-y-16 border-t border-border pt-10">
             {summitThemes.map((pillar, index) => (
               <motion.div
                 key={index}
