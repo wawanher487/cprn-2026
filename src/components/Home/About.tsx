@@ -45,7 +45,7 @@ export default function About() {
         '--orange-spread-tr': '0%',
       } as React.CSSProperties}
     >
-      <div id="about" className="mx-auto max-w-7xl px-6 py-10">
+      <div id="about" className="mx-auto max-w-7xl px-6 py-10 scroll-mt-12">
         <div className="grid items-center gap-16 md:grid-cols-2">
           {/* Image LEFT */}
           <motion.div
@@ -56,7 +56,7 @@ export default function About() {
           className="relative order-2 md:order-1">
             <Image
               src="/home/about.jpeg"
-              alt="CPRN Summit 2026"
+              alt="CPRN 2026 International Conference organized by SEAMEO CECCEP"
               width={720}
               height={720}
               className="w-full rounded-lg object-cover"
@@ -72,18 +72,17 @@ export default function About() {
             className="order-1 md:order-2"
             >
               {/* Header  */}
-              <motion.p
+              <motion.h3 
                 variants={itemVariants}
-                className="text-xl font-semibold uppercase tracking-wide  text-secondary"
-              >
+                className="text-xl font-semibold uppercase tracking-wide text-secondary">
                 About the Summit
-              </motion.p>
+              </motion.h3>
 
               <motion.h2
                 variants={itemVariants}
                 className="mt-2 text-3xl font-semibold leading-tight text-text-primary md:text-4xl"
               >
-                What is CPRN Summit 2026?
+                What is CPRN 2026 International Conference?
               </motion.h2>
               
               {/* Accent line */}

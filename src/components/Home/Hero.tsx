@@ -43,7 +43,7 @@ export default function Hero() {
       } as React.CSSProperties}
     >
 
-      <div className="mx-auto max-w-7xl px-6 py-6 mt-10 md:py-32">
+      <div className="mx-auto max-w-7xl px-6 py-6 mt-2 md:py-32">
         <div className="grid items-center gap-14 md:grid-cols-2">
           {/* TEXT LEFT */}
           <motion.div
@@ -53,7 +53,7 @@ export default function Hero() {
           >
             <motion.div
               variants={itemVariants}
-              className="mb-4 inline-flex items-center rounded-xl bg-secondary px-4 py-2 text-sm font-medium text-background"
+              className="inline-flex items-center rounded-xl bg-secondary px-4 py-2 text-sm font-medium text-background"
             >
               Organized by SEAMEO CECCEP
             </motion.div>
@@ -61,9 +61,9 @@ export default function Hero() {
             {/* Heading */}
             <motion.h1
               variants={itemVariants}
-              className="heading-1 max-w-xl leading-tight text-secondary text-3xl sm:text-4xl lg:text-5xl"
+              className="heading-1 mt-4 max-w-xl leading-tight text-secondary text-3xl sm:text-4xl lg:text-5xl"
             >
-              Centre Policy Research Network (CPRN) Summit 2026
+              Centre Policy Research Network (CPRN) 2026 International Conference
             </motion.h1>
 
             {/* Location */}
@@ -79,8 +79,7 @@ export default function Hero() {
               variants={itemVariants}
               className="mt-4 max-w-xl body-text text-text-primary"
             >
-              “Bridging Research, Policy, and Practice: Pathways toward an
-              Inclusive, Equitable, and Sustainable Futures”
+              CPRN 2026 is a premier international conference that brings together researchers, policymakers, and practitioners from various countries to discuss evidence-based policy and sustainable development.
             </motion.p>
 
             {/* CTA */}
@@ -122,7 +121,7 @@ export default function Hero() {
 
             <Image
               src="/home/home_1.jpeg"
-              alt="CPRN Summit Illustration"
+              alt="CPRN 2026 International Conference organized by SEAMEO CECCEP"
               width={1920}
               height={780}
               className="relative w-full rounded-2xl object-cover contrast-100 shadow-xl"
