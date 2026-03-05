@@ -6,6 +6,13 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
     title: "Event Programmes | CPRN 2026 International Conference by SEAMEO CECCEP",
     description: "Official event programmes of CPRN 2026 International Summit, including opening, closing, gala dinner, and full conference programmes.",
+    keywords: [
+        "CPRN 2026 Event Programmes",
+        "CPRN 2026 Conference Schedule",
+        "CPRN 2026 Conference Programmes",
+        "CPRN 2026 Schedule",
+        "CPRN 2026 International Summit Programmes",
+    ]
 }
 
 export default function EventProgrammesPage() {

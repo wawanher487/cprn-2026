@@ -8,9 +8,16 @@ import SummitVenue from "./sections/SummitVenue";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Important Dates, Fees & Accommodation | CPRN 2026",
+  title: "Important Dates, Fees & Accommodation | CPRN 2026 International Conference by SEAMEO CECCEP",
   description:
     "Important dates, fees, and accommodation information for CPRN 2026 International Conference organized by SEAMEO CECCEP.",
+  keywords: [
+    "CPRN 2026 Important Dates",
+    "CPRN 2026 Registration Deadlines",
+    "CPRN 2026 Conference Fees",
+    "CPRN 2026 Accommodation",
+    "CPRN 2026 Summit Venue",
+  ]
 }
 
 
