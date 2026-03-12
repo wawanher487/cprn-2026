@@ -1,4 +1,7 @@
 import mongoose, { Mongoose } from "mongoose";
+import dns from "dns";
+
+dns.setServers(["8.8.8.8", "1.1.1.1"]);
 
 const MONGODB_URI = process.env.MONGODB_URI;
 
@@ -12,7 +15,6 @@ type MongooseCache = {
 };
 
 declare global {
-  // eslint-disable-next-line no-var
   var mongoose: MongooseCache | undefined;
 }
 

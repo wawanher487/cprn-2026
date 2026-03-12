@@ -1,36 +1,76 @@
-
-
-export const conferenceFees = [
+export const InternationalFees = [
     {
-        title: "General Presenter",
+        title: "International Presenter",
+        price: 300,
+        currency: "USD",
+        features: [
+        "Presentation slot for accepted paper",
+        "Access to all conference sessions",
+        "Publication opportunity in conference proceedings",
+        "Certificate of presentation",
+        "Conference materials"
+        ]
+    },
+    {
+        title: "Student - International Presenter",
+        price: 200,
+        currency: "USD",
+        features: [
+        "Presentation slot for accepted paper",
+        "Access to all conference sessions",
+        "Publication opportunity in conference proceedings",
+        "Certificate of presentation",
+        "Conference materials"
+        ]
+    },
+    {
+        title: "International Participant (non-Presenter)",
+        price: 200,
+        currency: "USD",
+        features: [
+        "Access to all conference sessions",
+        "Opportunity to join discussions and networking",
+        "Certificate of participation",
+        "Conference materials"
+        ]
+    }
+]
+
+
+export const LocalFees = [
+    {
+        title: "Local Presenter",
         price: 250,
         currency: "USD",
         features: [
-            "Access to all conference sessions",
-            "Presentation slot for accepted paper",
-            "Conference kit",
-            "Refreshment and lunch",
-            "Certificate of presentation",
+        "Presentation slot for accepted paper",
+        "Access to all conference sessions",
+        "Publication opportunity in conference proceedings",
+        "Certificate of presentation",
+        "Conference materials"
         ]
     },
     {
-        title: "Semintar Participant",
-        price: 101,
+        title: "Student - Local Presenter",
+        price: 150,
         currency: "USD",
         features: [
-            "Access to seminar sessions",
-            "Conference kit",
-            "Refreshment and lunch",
-            "Certificate of participation",
+        "Presentation slot for accepted paper",
+        "Access to all conference sessions",
+        "Publication opportunity in conference proceedings",
+        "Certificate of presentation",
+        "Conference materials"
         ]
     },
     {
-        title: "Additional Article",
-        price: 161,
+        title: "Local Participant (non-Presenter)",
+        price: 150,
         currency: "USD",
         features: [
-            "Additional paper publication",
-            "Indexed proceeding"
+        "Access to all conference sessions",
+        "Opportunity to join discussions and networking",
+        "Certificate of participation",
+        "Conference materials"
         ]
     }
 ]
