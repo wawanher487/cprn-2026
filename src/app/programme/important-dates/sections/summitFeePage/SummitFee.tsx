@@ -1,7 +1,14 @@
+
+// import { conferenceFees } from "./data_fee";
+// import FeeCard from "./FeeCard";
+
+
+
 // export default function SummitFee() {
 //   return (
 //     <section id="summit-fee" className="scroll-mt-8">
 //       <h2 className="heading-2 text-primary mb-10">Summit Fee</h2>
+
 
 //       {/* ================= INFORMATION ================= */}
 //       <ul className="list-disc pl-6 space-y-3 body-text mb-16">
@@ -100,3 +107,5 @@ export default function SummitFee() {
     </section>
   );
 }
+
+

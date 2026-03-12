@@ -1,8 +1,8 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { SidebarFilters } from "@/components/SidebarFilters";
-import Deadlines from "./sections/Deadlines";
-import SummitFee from "./sections/SummitFee";
+import Deadlines from "./sections/deadlinesPage/Deadlines";
+import SummitFee from "./sections/summitFeePage/SummitFee";
 import Accommodation from "./sections/Accommodation";
 import SummitVenue from "./sections/SummitVenue";
 import type { Metadata } from "next";

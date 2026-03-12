@@ -1,5 +1,4 @@
 
-
 export const deadlines = [
   {
     title: "Early Bird Registration",
